@@ -1,0 +1,394 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style2.css">
+    <link href="https://fonts.cdnfonts.com/css/bright-sunshine" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menubtn">
+        <img src="/orangemenu.png" alt="" width="50px" style=" padding: 10px;" onclick="menuopening()">
+    </div>
+    
+    
+    
+    <div class="mobilenav" id="mobilenav">
+    
+    
+        <div class="mobilecontent" id="mobilecontent">
+            <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
+            <img src="/w2.png" alt="" width="200px" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
+            <a href="/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
+            <a href="/practiceareas/practiceareas.html">Practice Areas</a>
+            <a href="about.html ">About Us</a>
+            <a href="contact.html" >Contact</a>
+    
+            <a href="">552 780 5255</a>
+            <a href="">Oguzhanvar30@gmail.com</a>
+            <a href="">The adress</a>
+        </div>
+    </div>
+    
+    <script>
+    
+    function menuopening() {
+        document.getElementById("mobilecontent").style.paddingRight="400px";
+        document.getElementById("mobilenav").style.marginLeft="10%";
+        document.getElementById("mobilenav").style.width="100%";
+    }    
+    
+    function closemenu() {
+        document.getElementById("mobilenav").style.marginLeft="100%";
+        document.getElementById("mobilecontent").style.paddingRight="0px";
+        
+    }
+    
+    </script>
+
+
+    <div class="thetop" style="position:absolute; top: 0;">
+
+        <img src="/orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'">
+        <div class="navbar">
+            <a href="/makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+            <a href="/practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
+            <a href="about.html " style="margin-left: 350px;">About Us</a>
+            <a href="contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+        </div>
+    
+
+    </div>
+
+
+
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+        /* Submit button style */
+        input[type="submit"] {
+          background-color: green;
+          color: white;
+          border: 1px solid green;
+          padding: 8px 16px;
+          cursor: pointer;
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          margin-top: 16px;
+        }
+      
+        /* Hover effect */
+        input[type="submit"]:hover {
+          background-color: white;
+          color: green;
+        }
+      
+        input{
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    outline: none;
+    padding: 5px 50px;
+    border: 1px solid green;
+}
+
+
+textarea{
+    outline: none;
+    border: 1px solid green;
+  height: 150px;
+  font-family: 'Poiret One', cursive;
+  font-weight: 900;
+  margin-top: 0px;
+}
+
+
+
+
+        /* Form container */
+        .form-container {
+          display: flex;
+          font-family: 'Poiret One', cursive;
+          font-weight: 900;
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 400px;
+        }
+      
+        /* Label style */
+        label {
+          margin-bottom: 8px;
+        }
+      
+        /* Input container */
+        .input-container {
+          display: flex;
+          gap: 16px;
+        }
+      
+        /* Input container for name and last name */
+        .input-container.names {
+          justify-content: space-between;
+        }
+      
+        /* Input container for email and number */
+        .input-container.contacts {
+          justify-content: space-between;
+        }
+      
+        /* Textarea style */
+        textarea {
+          width: 100%;
+          box-sizing: border-box;
+        }
+      
+        /* Custom styles for inputs */
+        input {
+          font-family: 'Poiret One', cursive;
+          outline: none;
+          padding-left: 4px;
+          width: 100%;
+        }
+      
+        /* Additional styles for specific elements */
+        .callingtime {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      
+        .thetextarea {
+          margin-top: 20px;
+        }
+      
+        .request {
+          text-align: center;
+        }
+      
+        .request h1 {
+          font-family: 'Poiret One', cursive;
+          margin-top: 0;
+        }
+        form{
+     
+      margin-top: 150px;
+    }
+
+    @media screen and (max-width:600px){
+        .thetop img{
+          margin-left: 150px;
+        }
+      
+        #footerlogo{
+          width: 150px;
+          margin-top: 1px;
+          margin-left: 26%;
+        }
+      }
+
+      </style>
+      
+    
+    <form method="POST" action="sendmail.php">
+    
+    
+      <div class="request">
+        <h1>Request a Consultation</h1>
+      
+        <div class="form-container">
+          <div class="input-container names">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+      
+          <div class="input-container contacts">
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="phone">Number:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+      
+          <div class="callingtime">
+            <label for="call-time">Call me at:</label>
+            <input type="text" id="call-time" name="call-time" placeholder="Ex. 'Reach me at 5-6 PM by phone tomorrow.'" required>
+          </div>
+      
+          <div class="thetextarea">
+            <label for="best-time">Best Time to Call You:</label>
+            <textarea id="best-time" name="best-time" rows="4" required></textarea>
+          </div>
+      
+          <input type="submit" value="Schedule Appointment">
+        </div>
+      </div>
+    </form>
+      
+
+    <div class="phoneandemail">
+      <a href="tel:+13167899956"><img src="phone icon.png" alt="" width="30px"><span> +13167899956</span></a>
+      <a href="mailto:oguzhanvar30@gmail.com"  id="emailone"><img src="email-logo.png" alt="" width="30px"> <span> oguzhanvar30@gmail.com</span></a>
+  
+  </div>
+  <div class="mrframe">
+  <iframe class="theframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4762810154307!2d-97.272841384689!3d37.54384107980216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87baefd4a02ea26f%3A0x6e7793499aeac923!2sAttorney%20Russell%20L.%20Mills!5e0!3m2!1sen!2str!4v1685295229911!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  <style>
+
+    span{
+      margin-left: 35px;
+    }
+
+    #emailone{
+      margin-left:65%;
+    }
+
+
+.theframe{
+  margin-top: 130px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding-top: -100px;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive videos */
+
+}
+
+
+    .phoneandemail{
+    margin-left: 40px;
+
+    margin-top: -110px;
+
+}
+
+
+
+.phoneandemail a{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    background-color:orangered ;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid orangered;
+  margin-right: -100px;
+    transition: 0.5s;
+}
+
+.phoneandemail a:hover{
+background-color: orangered;
+color: white;
+}
+
+
+@media screen and (max-width:600px){
+  
+  
+  .phoneandemail{
+    display: block;
+    margin-left: 110px;
+    margin-bottom: 100px;
+    margin-top: 120px;
+  }
+  #emailone{
+  margin-top: 50px;
+  margin-left: -50px;
+  max-width: 270px;
+
+}
+.theframe{
+  margin-top: -50px;
+}
+
+.phoneandemail a{
+  max-width: 170px;
+  display:grid;
+}
+
+
+
+}
+
+  </style>
+
+</body>
+
+
+
+<footer>
+
+    <img src="white logo.png" alt="" width="200px" id="footerlogo">
+    
+    
+    
+    <div class="emailandphone">
+    
+        <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:5527805255">5527805255</a>
+    
+        <img src="email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
+    
+    
+    </div>
+    
+    
+    
+    <div class="theadress">
+        <img src="adressicon.png" alt="" width="30px" style="position:absolute;"><br>
+        <p>The adress</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="linkcolumn">
+       
+    
+      <a href="home.html">Home</a>
+      <a href="practiceareas/practiceareas.html">Practice Areas</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.4762810154307!2d-97.272841384689!3d37.54384107980216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87baefd4a02ea26f%3A0x6e7793499aeac923!2sAttorney%20Russell%20L.%20Mills!5e0!3m2!1sen!2str!4v1685295229911!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </footer>
+
+    <style>
+      .footer{
+        top: 00px;
+      }
+
+      .emailandphone{
+    position: absolute;
+        top: 220px;
+    left: 250px;
+    width: 500px;
+    margin: 0;
+}
+
+
+@media screen and (max-width:600px) {
+.emailandphone{
+  top: 400px;
+  left: 50px;
+}
+}
+
+    </style>
+
+</html>

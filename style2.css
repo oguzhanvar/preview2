@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Manrope:wght@200&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calgary-free');
+.thetop{
+    position: fixed;
+    font-weight: 900;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 5;
+}
+
+
+#phoneandemail a{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    color: orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid orangered;
+    transition: 0.5s;
+}
+
+#phoneandemail a:hover{
+background-color: orangered;
+color: white;
+}
+
+
+
+
+
+
+.thetop img{
+    margin-left: 45%;
+    cursor: pointer;
+}
+.navbar{
+    margin:0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar a{
+    color: orangered;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.navbar a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+   
+    }
+
+#boxlinks:hover{
+
+    background-color: #ff4500;
+color: white;
+}
+
+.toplinks{
+    margin-left: 180px;
+    margin-top: 35px;
+}
+img{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.toplinks a{
+color: black;
+text-decoration: none;
+
+margin-right: 40px;
+}
+
+body{
+    margin: 0;
+}
+
+
+
+
+.thetitle img{
+    margin: 0;
+  
+    z-index: -3;
+    
+    
+}
+
+
+.phoneandemails{
+margin-top: 120px;
+margin-left: 120px;
+}
+
+
+
+.phoneandemails a{
+    font-family: 'Manrope', sans-serif;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.thetitle h1{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    margin-left: 14%;
+    color: orangered;
+    font-size: 160px;
+}
+
+#thelogo{
+    position: absolute;
+    left: 42%;
+    margin-top: 400px;
+}
+
+.therest{
+    position: absolute;
+    margin-top: 960px;
+    font-family: 'Manrope', sans-serif;
+            
+}
+
+.practicearea{
+    background-color: black;
+    background-image: url(/bankruptimg2.png);
+    margin-bottom: 200px;
+    height: 450px;
+    
+    color: white;
+}
+
+.practicearea a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-top: 100px;
+    left: 5%;
+    transition: 0.5s;
+}
+
+
+.practicearea a:hover{
+background-color: white;
+color: black;
+}
+
+
+.practicearea p{
+    text-align: center;
+}
+
+.practicearea h1{
+    
+font-size: 45px;
+margin-left: 2%;
+}
+
+
+
+.aboutbg{
+
+    margin: 0;
+    opacity: 1;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/bright-sunshine');
+
+.titlediv{
+    font-family: 'Kanit', sans-serif;
+    height: 400px;
+    background-color:black; height:758px;
+}
+
+.titlediv h1{
+    font-family: 'Bright Sunshine', sans-serif;
+    position: absolute;
+    top: 120px;
+    color: orangered;
+    left: 320px;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#myprofile{
+    
+    font-family: 'Calgary FREE', sans-serif;
+                                                
+    position: absolute;
+    top: 420px;
+    color: orangered;
+    left: 580px;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+
+.logo2{
+    margin-top: 120px;
+    margin-left: 35%;
+    width: 400px;
+
+
+}
+
+img{
+    margin: 0;
+}
+
+
+
+.aboutme{
+    margin-top: 200px;
+}
+.aboutme h1{
+
+    position: absolute;
+    font-family: 'Bright Sunshine', sans-serif;
+    font-size: 60px;
+    text-align: left;
+margin-top: 100px;
+margin-left: 5%;
+z-index: 3;
+color: white;
+
+
+
+
+}
+
+
+.aboutme p{
+    position: absolute;
+    text-align: left;
+            
+    margin-top: 100px;
+    margin-left: 50%;
+    color: white;
+    font-size: 15px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.phonelogoemail{
+    position: absolute;
+    top: 550px;
+}
+
+.phonelogoemail a{
+
+    color: orangered;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid orangered;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+
+.mslogo{
+    position: absolute;
+    top: 450px;
+    left: 60%;
+}
+
+.aboutservice{
+    margin-top: 100px;
+}
+
+.aboutservice a{
+    position: absolute;
+    margin-top: 600px;
+    font-family: 'Manrope', sans-serif;
+    left: 80%;
+border: 1px solid white;
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+transition: 0.5s;
+}
+
+.aboutservice a:hover{
+    background-color: white;
+    color: black;
+}
+
+.aboutservice p{
+    position: absolute;
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+
+    margin-left: 50%;
+    color: black;
+    font-size: 15px;
+    
+}
+
+
+
+.moreaboutservice{
+    margin-top: 550px;
+
+}
+
+.moreaboutservice p{
+    position: absolute;
+    margin-top: 350px;
+    color: orangered;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+}
+
+.moreaboutservice a{
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 45%;
+    border: 1px solid orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: orangered;
+
+    font-family: 'Manrope', sans-serif;
+    transition: 0.6s;
+}
+
+.moreaboutservice a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+
+.moreaboutservice2{
+    margin-top: 1600px;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.moreaboutservice2 img{
+    margin-left:55%;
+}
+
+.moreaboutservice2 p{
+    position: absolute;
+
+    width: 650px;
+    color: orangered;
+    text-align: center;
+}
+
+.mslogo{
+    position: absolute;
+     left: 44%;
+}
+
+
+
+.moreaboutservice2 a{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 75%;
+    border: 1px solid orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: orangered;
+            
+    transition: 0.6s;
+}
+
+.moreaboutservice2 a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+footer{
+    position: absolute;
+    margin-top: 4000px;
+    height: 600px;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.emailandphone{
+   position: absolute;
+   margin-top: 70px;
+   margin-left: 10%;
+}
+
+.emailandphone a{
+
+    color: white;
+    text-decoration: none;
+            
+    margin-right: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .aboutservice a{
+        margin-top: 1050px;
+        margin-left: -180px;
+        border: 1px solid #ff4500;
+        background-color: #ff4500;
+    }
+    }
+    
+.v{
+    left: -32px;
+}
+
+
+.theadress{
+    margin-left: 0%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.theadress p{
+    margin-left: 25px;
+}
+
+.linkcolumn{
+    margin-top: 50px;
+    margin-left: 90%;
+}
+
+.linkcolumn a{
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+            
+}
+
+
+.linkcolumn a:hover{
+    text-decoration: underline;
+}
+
+
+
+.theadress{
+    display: none;
+}
+
+
+
+.menubtn{
+    margin-right: 10%;
+    cursor: pointer;
+    display: none;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+
+.mobilenav{
+    position: fixed;
+    height: 768px;
+    top: 0;
+    margin-left: 100%;
+    transition: 0.8s;
+    z-index: 8;
+}
+
+.mobilenav img{
+
+    z-index: 3;
+}
+
+.aboutme p{
+    font-family: 'Manrope', sans-serif;
+}
+
+.mobilecontent{
+    height: 100%;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    width: 0;
+    background-color: orangered;    
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    transition: 0.8s;
+}
+
+#star{
+    margin-left:160px;
+    margin-top: 70px;
+}
+
+.contact{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+#logore{
+    margin-left:100px;
+    margin-top: 10px;
+}
+.aboutme a{
+    position: absolute;
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 10px 20px;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-top: 800px;
+    transition: 0.5s;
+}
+
+.aboutme a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+.mobilecontent a{
+text-align: center;
+
+color: white;
+float: left;
+width: 300px;
+text-decoration: none;
+margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menubtn{
+        display: block;
+        z-index: 15;
+    }
+    .menubtn img{
+        z-index: 21;
+    }
+
+    .titlediv{
+        height: 400px;
+    }
+
+
+    .titlediv h1{
+        left: -20%;
+        top: 70px;
+        text-align: center;
+    
+}
+
+
+#icon{
+    margin-left: 0px;
+    width: 50px;
+}
+.thetop img{
+    margin-left: 15%;
+    width: 100px;
+}
+
+    .navbar{
+        display: none;
+    }
+
+    .phoneandemail{
+        display: none;
+    }
+
+    .copywrite{
+        margin-left: 10%;
+        margin-top: 50px
+    }
+
+    .copywrite h1{
+        left: 0;
+        margin-top: 0px;
+        font-size: 45px;
+        
+       width: 300px;
+       text-align: center;
+    }
+
+    .copywrite a{
+    
+        margin-left: 60px;
+    }
+    iframe{
+        margin-top: 180px;
+        width: 100%;
+    }
+    .whyme{
+        margin-left: 0;
+    }
+
+    .whyme h1{
+        width: 300px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+.whyme div{
+    display: inline-block;
+    width: 85%;
+    height: 300px;
+    margin-left: 0px;
+    background-color: white;
+    border: 1px solid orangered;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.aboutme{
+    margin-top: 500px;
+    padding-bottom: 70px;
+}
+
+.aboutme a{
+    margin-left: 135px;
+}
+
+.aboutme img{
+    position: relative;    
+    margin-left: -24%;
+
+}
+
+.proof{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.proof img{
+    position: absolute;
+    left: 0px;
+}
+
+.practice{
+    margin-left: 0;
+}
+
+.area{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contact{
+    margin-left: 0;
+}
+
+.column{
+    margin-right: 0px;
+}
+
+textarea{
+    margin-left:0px;
+}
+
+.logo2{
+    margin-left: 90px;
+width: 200px;
+}
+
+.emailandphone{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    width: 500px;
+    margin: 0;
+}
+
+.emailandphone a{
+margin: 0;
+margin-right: 20px;
+}
+
+
+
+#star{
+    margin-left:150px;
+    margin-top: 70px;
+}
+
+.proof p{
+    margin-left: 20px;
+}
+
+#logore{
+    margin-left:70px;
+    margin-top: 10px;
+}
+
+.linkcolumn{
+    margin-left: 0px;
+}
+.theadress{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 100px;
+}
+input[type=submit]{
+    margin-left: 45%;
+    
+    } 
+    footer{
+        top:1600px ;
+        width: 500px;
+    }
+    .thetop{
+        top: 0;
+    }
+    .thetop img{
+        position: absolute;
+        top: 0;
+        margin-left: 23%;
+    }
+
+
+    .linkcolumn{
+        margin-left: -90px;
+        margin-top: 130px;
+        text-align: center;
+    }
+
+
+    #footerlogo{
+        margin-left: 100px;
+        margin-top: -30px;
+    }
+    
+.thetitle img{
+    position: absolute;
+    top: 0;
+
+}
+
+.thetitle h1{
+   font-size: 50px;
+}
+
+#thelogo{
+    width: 200px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -6%;
+}
+
+.practicearea h1{
+    text-align: center;
+}
+
+.practicearea{
+    height: 630px;
+}
+
+.practicearea a{
+    margin-top: 0px;
+    margin-left: 140px;
+}
+
+.phonelogoemail{
+    display: none;
+}
+
+.titlediv{
+    margin-left: 0;
+}
+
+.titlediv h1{
+    left: 10%;
+    margin-top: 10px;
+}
+
+.titlediv h1{
+    font-size: 45px;
+    margin-left: 80px;
+}
+
+.mslogo{
+    width: 150px;
+    top: 370px;
+    margin-left: -30px;
+}
+.titlediv{
+    width: 150%;
+}
+#mobilelogo{
+    top: -20px;
+    left: 45px;
+    width: 110px;
+}
+
+.emailandphone{
+    position: absolute;
+    top: 400px;
+    left: -200px;
+    width: 500px;
+    margin: 0;
+}
+.aboutbg{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+
+.aboutservice p{
+    margin-top: 400px;
+width: 100%;
+margin-left: 0px;
+}
+
+.moreaboutservice{
+
+        position: absolute;
+    top: 1200px;
+    width: 100%;
+}
+
+
+.moreaboutservice2{
+
+    position: absolute;
+top: 500px;
+width: 100%;
+}
+
+
+.moreaboutservice p{
+    margin-top: 600px;
+width: 97%;
+margin-left: 0px;
+}
+
+.moreaboutservice a{
+    margin-top: 1300px;
+    margin-left: 36%;
+}
+.moreaboutservice2 a{
+    margin-top: 240%;
+
+    margin-left: 36%;
+}
+
+.moreaboutservice img{
+    margin-left: 0;
+}
+
+.moreaboutservice2 p{
+    margin-top: 300px;
+width: 97%;
+margin-left: 0px;
+}
+
+.moreaboutservice2 img {
+    width: 400px;
+    margin-left: 15px;
+}
+
+.moreaboutservice{
+    margin-top: 1200px;
+}
+
+.moreaboutservice2{
+    margin-top: 2900px;
+}
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width:375px){
+
+    .moreaboutservice2 img {
+        width: 400px;
+        margin-left: 0px;
+    }
+
+
+    .aboutbg{
+        width: 150%;
+    }
+    .thetitle img{
+        width: 150%;
+    }
+
+    .moreaboutservice img{
+        margin-left: 10px;
+    }
+
+    .moreaboutservice p{
+        margin-left: 5px;
+    }
+
+    .moreaboutservice a{
+        margin-top: 1400px;
+    }
+
+    .moreaboutservice2 p{
+        margin-left: 20px;
+    }
+
+    .moreaboutservice2 a{
+        position: absolute;
+        left: -40px;
+    }
+
+
+    .moreaboutservice2 a{
+        margin-top: 300%;
+        margin-left: 47%;
+    }
+
+    video{
+        width: 150%;
+    }
+
+    .aboutme{
+        width: 360px;
+    }
+
+.whyme div{
+    width:320px;
+}
+
+.proof{
+    width: 360px;
+}
+
+.area{
+    width: 360px;
+}
+.contact{
+    position: absolute;
+    left: 0;
+}
+input{padding: 1px; margin-left: 0px; margin-right: 0px;}
+
+.column{
+    margin-right: 0px;
+    width: 40%;
+}
+
+footer{
+    width: 500px;
+
+}
+
+input[type=submit]{
+margin-left: 45%;
+
+} 
+
+.thetop img{
+    margin-left: 23%;
+}
+.aboutservice p{
+    margin-left:10px; 
+    }
+
+
+}
+
+
+@media screen and (max-width:325px) {
+
+
+    .aboutservice p{
+    margin-left:40px; 
+    }
+
+    .moreaboutservice2 a{
+        position: absolute;
+        top: 4000px;
+        margin-left: 47%;
+    }
+
+    .moreaboutservice p{
+        width: 380px;
+        margin-left: 0px;
+    }
+
+    
+    .moreaboutservice img{
+        width: 400px;
+        left: -10px;
+    }
+
+
+    .moreaboutservice2 p{
+        width: 350px;
+        margin-left: -80px;
+    }
+
+    .moreaboutservice2 a{
+        position: absolute;
+        margin-top: 270%;
+        margin-left: 60%;
+    }
+
+    .moreaboutservice a{
+      
+        margin-left: 135px;
+    }
+
+    .moreaboutservice2 p{
+        margin-left: 30px;
+    }
+
+    .moreaboutservice2 img {
+        width: 400px;
+        margin-left: 0px;
+    }
+
+
+
+}
+
+@media screen and (max-width:390px) {
+    
+
+    .moreaboutservice a{
+        margin-top: 1400px;
+    }
+
+    .moreaboutservice2 a{
+        margin-top: 1050px;
+    }
+
+}
