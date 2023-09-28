@@ -5,38 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>The law office of Cotton&Pittman</title>
+    <title>The law firm of Cotton & Pittman</title>
 </head>
-<body>
- 
+<body onscroll="Scroolling()">
+  <div class="center-container">
     <div class="copywrite">
         <h1>"The Expertise Of Justice."</h1>
-        <a href="">Learn More</a>
+        <a href="#"id="scrollLink">Learn More</a><br>
+        <a href="contact.html" id="request" >Request Free Consultation</a>
     </div>
- 
-    <div class="menubtn">
-        <img src="menuicon.png" alt="" width="50px" style=" padding: 10px;" onclick="menuopening()">
-    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // JavaScript to handle the scrolling using jQuery
+  $(document).ready(function () {
+    $("#scrollLink").click(function () {
+      // Calculate the target position
+      const targetPosition = $(window).scrollTop() + 1600; // Scroll down by 300 pixels
+
+      // Scroll smoothly to the target position
+      $("html, body").animate({ scrollTop: targetPosition }, 700); // 1000ms (1 second) animation duration
+    });
+  });
+</script>
+
+<div class="mobilenav" id="mobilenav">
     
     
-    
-    <div class="mobilenav" id="mobilenav">
-    
-    
-        <div class="mobilecontent" id="mobilecontent">
-            <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
-            <img src="w2.png" alt="" width="200px" id="mobilelogo" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
-            <a href="makeapayment.html" style="margin-top:150px; ">Make a payment</a>
-            <a href="practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="about.html ">About Us</a>
-            <a href="contact.html" >Contact</a>
-    
-            <a href="">+13167899956</a>
-            <a href="">Oguzhanvar30@gmail.com</a>
-            <a href="">The adress</a>
-        </div>
-    </div>
-    
+  <div class="mobilecontent" id="mobilecontent">
+      <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
+      <img src="/preview2/w2.png" alt="" width="100px" style="position: absolute; margin-top:70px; margin-left: 98px; z-index: 15;" onclick="location.href='/preview2/home.html'">
+      <a href="/preview2/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
+      <a href="/preview2/practiceareas/practiceareas.html">Practice Areas</a>
+      <a href="resources.html">Resources</a>
+      <a href="testimonals.html">Testimonals</a>
+      <a href="about.html ">About Us</a>
+      <a href="contact.html" >Contact</a>
+
+      <a href=""><img src="/preview2/phone icon.png" alt="" style="margin-left:-23px;" width="20px">+13162911452</a>
+      <a href=""><img src="/preview2/email-logo.png" alt="" style="margin-left:-23px;" width="20px"> Oguzhanvar30@gmail.com</a>
+      <a href="" style="margin-left: 15px;">320 N Main, Wichita, KS 67202, United States</a>
+  </div>
+</div>
     <script>
     
     function menuopening() {
@@ -56,27 +67,73 @@
 
 
 
-    <div class="thetop" id="thetop" onscroll="Scroolling()">
+<div class="thetop" id="thetop">
+  <div class="menubtn">
+   <img src="/preview2/orangemenu.png" alt="" width="20px" style=" padding: 10px; width: 40px; margin-left: -20px; margin-top: 0px;" onclick="menuopening()" id="icon">
+</div>
+<div class="logodiv">
+<img src="orangeredlogo2.png" alt="" width="100px" onclick="location.href='/preview2/home.html'" style="cursor:pointer;">
+</div>
+<div class="navbar" id="navbar">
+   <a href="/preview2/makeapayment.html" class="make_payment" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+   <a href="resources.html">Resources</a>
+   <a href="/preview2/practiceareas/practiceareas.html" >Practice Areas</a>
+   <a href="testimonals.html" id="practice_a">Testimonals</a>
+   <a href="/preview2/about.html" id="about_a" >About Us</a>
+   <a href="/preview2/contact.html" class="contactbox" style=" border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+</div>
+</div>
+<video src="bigblackdude.mp4" width="100%" autoplay loop muted id="bgvid"></video>
 
-        <img src="orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'" style="cursor:pointer;">
-        <div class="navbar" id="navbar">
-            <a href="makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
-            <a href="practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
-            <a href="about.html " style="margin-left: 350px;">About Us</a>
-            <a href="contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
-    </div>
-        </div>
-        <video src="bigblackdude.mp4" width="100%" autoplay loop muted id="bgvid"></video>
 
 
-      
+  <script>
+    function Scroolling() {
+        var thetop = document.getElementById("thetop");
+        if (window.scrollY > 0) {
+            thetop.style.backgroundColor = "white";
+        } else {
+            thetop.style.backgroundColor = "transparent";
+        }
+    }
+</script>
 
 
 <div class="phoneandemail">
-    <a href="tel:+13167899956">+13167899956</a>
-    <a href="mailto:oguzhanvar30@gmail.com" style="margin-left:65%;">oguzhanvar30@gmail.com</a>
+    <a href="tel:+13162911452" id="tel_a">+13162911452</a>
+    <a href="mailto:oguzhanvar30@gmail.com" style="margin-left:64%;">oguzhanvar30@gmail.com</a>
 
 </div>
+
+
+<style>
+  .phoneandemail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  max-width: 100%; /* Add this to limit container width */
+}
+
+#emailone {
+ 
+  flex: 0 0 auto; /* This prevents the item from growing or shrinking */
+
+}
+
+.phoneandemail a{
+  margin-right: 20px;
+}
+
+</style>
+
+
+
+
+
+
+
+
 
 
 <!--
@@ -96,14 +153,13 @@
 
 
 
-
 <div class="whyme">
-    <h1 id="theh1">Right lawyer to fight for your rights</h1>
+  <h1 id="theh1">Right lawyer to fight for your rights</h1>
 
 <div class="reason">
 <h1>Super Experience.</h1>
 <p>Our attorney boasts extensive experience and exceptional talent, evident in a proven track record of successful cases.
-    With a deep understanding of the law, they offer skillful representation and strategic solutions for your legal needs.
+  With a deep understanding of the law, they offer skillful representation and strategic solutions for your legal needs.
 
 
 </p>
@@ -113,22 +169,22 @@
 
 
 <div class="reason">
-   
- <h1>The Wisdom of Decades.</h1>
+ 
+<h1>The Wisdom of Decades.</h1>
 <p>Peggy a seasoned attorney possesses a wealth of wisdom and extensive experience, navigating complex legal landscapes with precision.
-    Trust in their adept guidance for skilled representation tailored to your unique needs.
+  Trust in their adept guidance for skilled representation tailored to your unique needs.
 </p>
-    
+  
 </div>
-    
+  
 <div class="reason">
 <h1>The Talent of Ancients</h1>
-<p>Experience excellence with our impeccable services. With a proven track record of success, our skilled lawyer
-    delivers unwavering dedication, strategic brilliance, and guidance to ensure optimal outcomes for clients.
+<p>Experience excellence with our impeccable attorney services. With a proven track record of success, our skilled legal team delivers unwavering dedication, 
+  strategic brilliance, and  guidance to ensure optimal outcomes for every client.
 </p>
-        
-    </div>
-        
+      
+  </div>
+      
 <a href="contact.html">Get In Touch</a>
 
 </div>            
@@ -142,29 +198,29 @@
 <h1>The Profile</h1>
 <img src="profilepic.png" alt="" width="550px" >
 <p>
-  Meet our esteemed attorney, [Lawyer's Name], a distinguished legal professional with a passion for justice and a wealth of experience in the field of law. With an unwavering commitment to
-   serving clients and upholding the principles of the legal system, [Lawyer's Name] has earned a stellar reputation as one of the finest legal minds in the industry.Hailing from a background of
-   academic excellence, [Lawyer's Name] completed their Juris Doctor degree from a renowned law school, where they graduated with top honors. Their insatiable thirst for knowledge and 
+  Meet our esteemed attorney, Cotton and Pittman, a distinguished legal professional with a passion for justice and a wealth of experience in the field of law. With an unwavering commitment to
+   serving clients and upholding the principles of the legal system, Cotton and Pittman has earned a stellar reputation as one of the finest legal minds in the industry.Hailing from a background of
+   academic excellence, Cotton and Pittman completed their Juris Doctor degree from a renowned law school, where they graduated with top honors. Their insatiable thirst for knowledge and 
   dedication to staying abreast of the latest legal developments has led them to attend numerous specialized courses and seminars throughout their career.With a career spanning over [X] 
-  years, [Lawyer's Name] has successfully represented a diverse array of clients, from individuals seeking justice to prominent corporations navigating complex legal matters. Their practice
-  areas include but are not limited to corporate law, intellectual property, contract disputes, and civil litigation.Beyond their impressive track record, [Lawyer's Name] is highly regarded for 
+  years, Cotton and Pittman has successfully represented a diverse array of clients, from individuals seeking justice to prominent corporations navigating complex legal matters. Their practice
+  areas include but are not limited to corporate law, intellectual property, contract disputes, and civil litigation.Beyond their impressive track record, Cotton and Pittman is highly regarded for 
   their exceptional communication skills and ability to establish a deep understanding of their clients' needs. Empathetic and approachable, they ensure that every client receives personalized 
-  attention and unwavering support throughout the legal process.In addition to their thriving legal practice, [Lawyer's Name] actively participates in pro bono work and community outreach 
+  attention and unwavering support throughout the legal process.In addition to their thriving legal practice, Cotton and Pittman actively participates in pro bono work and community outreach 
   programs, giving back to society and advocating for equal access to justice.Whether it's negotiating settlements, devising comprehensive legal strategies, or zealously representing clients in 
-  the courtroom, [Lawyer's Name] consistently demonstrates a sharp legal acumen, strong moral compass, and an unwavering dedication to achieving the best possible outcomes for those they 
-  represent.As an invaluable member of our legal team, [Lawyer's Name] continues to inspire and set new standards of excellence in the legal profession. Clients can trust in their expertise and
-  rest assured that their legal matters are in the hands of a true advocate for justice.In their free time, [Lawyer's Name] enjoys giving back to the community, exploring the outdoors, and indulging
+  the courtroom, Cotton and Pittman consistently demonstrates a sharp legal acumen, strong moral compass, and an unwavering dedication to achieving the best possible outcomes for those they 
+  represent.As an invaluable member of our legal team, Cotton and Pittman continues to inspire and set new standards of excellence in the legal profession. Clients can trust in their expertise and
+  rest assured that their legal matters are in the hands of a true advocate for justice.In their free time, Cotton and Pittman enjoys giving back to the community, exploring the outdoors, and indulging
    in literature from all corners of the world.
   </p>
-<a href="/about.html">More Info</a>
+<a href="/preview2/about.html">More Info</a>
     </div>
 
 <div class="socialproof">
 
     <div class="proof">
         <img src="whitestars.png" alt="fivstar"  width="100px" id="star">
-        <img src="w2.png" alt="logo"  width="100px" id="logore">
-        <p>[Lawyer's Name] provided exceptional legal representation, understanding my case thoroughly. 
+        <img src="w2.png" alt="logo"  width="150px" id="logore">
+        <p>Cotton and Pittman provided exceptional legal representation, understanding my case thoroughly. 
           Their dedication and expertise led to a favorable outcome beyond my expectations."<br>-Client </p>
 
     </div>
@@ -172,17 +228,17 @@
 
     <div class="proof">
         <img src="whitestars.png" alt="fivstar"  width="100px" id="star">
-        <img src="w2.png" alt="logo"  width="100px" id="logore">
-        <p> <span>"Working with [Lawyer's Name] was a game-changer for my business. Their knowledge of corporate law and
-           attention to detail were evident from the start. Highly recommended!"</span> <br>-Client</p>
+        <img src="w2.png" alt="logo"  width="150px" id="logore">
+        <p> <span>"Working with Cotton and Pittman was a game-changer for my business. Their knowledge of corporate law and
+           attention to detail were evident from the start. <br id="thebr"> Highly recommended!"</span> <br>-Client</p>
 
     </div>
 
 
     <div class="proof">
         <img src="whitestars.png" alt="fivstar"  width="100px" id="star">
-        <img src="w2.png" alt="logo"  width="100px" id="logore">
-        <p>"I needed top-notch representation for an intellectual property issue. [Lawyer's Name] exceeded
+        <img src="w2.png" alt="logo"  width="150px" id="logore">
+        <p>"I needed top-notch representation for an intellectual property issue. Cotton and Pittman exceeded
            my expectations, protecting our rights effectively.Thanks a Lot!"<br>-Client</p>
 
     </div>
@@ -193,49 +249,73 @@
 </div>
 
 
+
 <div class="practice">
-
-
-  <div class="area" id="area1" style="background-image:url(normaldivorce.png);" onclick="location.href='practiceareas/divorce.html'">
-
-  
-      <h1>Divorce</h1>
-      <p>Navigating a divorce can be emotionally taxing and legally complex. Our experienced team, led by [Lawyer's Name], is here to guide you through this challenging process with empathy and efficiency. Whether it's uncontested or contested divorce, we provide personalized solutions to protect your interests and achieve the best possible outcome for you and your family.</p>
-      <div class="text-container">
-      <h1 id="learn">Learn more</h1>
-    </div>
+  <!-- Box 1 -->
+  <div class="area" id="area1" style="background-image:url(/preview2/normaldivorce.png);" onclick="location.href='practiceareas/divorce.html'">
+      <div class="content-wrapper">
+          <div class="text-container">
+              <h1>Divorce</h1>
+              <p>Navigating a divorce can be emotionally taxing and legally complex. Our experienced team, led by Cotton and Pittman, is here to guide you through this challenging process with empathy and efficiency. Whether it's uncontested or contested divorce, we provide personalized solutions to protect your interests and achieve the best possible outcome for you and your family.</p>
+              <h1 class="learn">Learn more</h1>
+          </div>
+      </div>
   </div>
-  
-    <div class="area"style="background-image:url(bankruptimg.png); " onclick="location.href='practiceareas/bankrupt.html'">
-
-        <h1>Bankrupt</h1>
-        <p>Financial hardships can be overwhelming, but you don't have to face them alone. [Lawyer's Name] specializes in bankruptcy law and offers expert counsel to individuals and businesses seeking debt relief. We assess your unique situation, strategize the best approach, and provide dedicated support to help you regain control of your financial future. <br> Your path to financial freedom starts here.</p>
-            <h1 id="learn">Learn more</h1>
-    </div>
-
-    <div class="area"style="background-image:url(childcustody.png);"onclick="location.href='practiceareas/childcustody.html'">
-
-        <h1>Child Custody</h1>
-        <p>The well-being of your children is of utmost importance, and we understand the sensitivity of child custody matters. [Lawyer's Name] is committed to safeguarding your parental rights and ensuring your children's best interests are protected. With a compassionate approach, we aim to find the most suitable custody arrangements for you and your family.</p>
-            <h1 id="learn">Learn more</h1>
-    </div>
-
-
-
-
-
-
+  <!-- Box 2 -->
+  <div class="area" style="background-image:url(/preview2/bankruptimg.png);" onclick="location.href='practiceareas/bankrupt.html'">
+      <div class="content-wrapper">
+          <div class="text-container">
+              <h1>Bankrupt</h1>
+              <p>Financial hardships can be overwhelming, but you don't have to face them alone. Cotton and Pittman specializes in bankruptcy law and offers expert counsel to individuals and businesses seeking debt relief. We assess your unique situation, strategize the best approach,and provide dedicated support to help you regain control of your financial future. <br>Your path to financial freedom begins</p>
+              <h1 class="learn">Learn more</h1>
+          </div>
+      </div>
+  </div>
+  <!-- Box 3 -->
+  <div class="area" style="background-image:url(/preview2/childcustody.png);" onclick="location.href='practiceareas/childcustody.html'">
+      <div class="content-wrapper">
+          <div class="text-container">
+              <h1>Child Custody</h1>
+              <p>The well-being of your children is of utmost importance, and we understand the sensitivity of child custody matters. Cotton and Pittman is committed to safeguarding your parental rights and ensuring your children's best interests are protected. With a compassionate approach, we aim to find the most suitable custody arrangements for you and your family.</p>
+              <h1 class="learn">Learn more</h1>
+          </div>
+      </div>
+  </div>
 </div>
 
 
 
+<script>
+  // Get references to the box elements
+  var boxes = document.querySelectorAll('.area');
+
+  // Function to adjust box height based on screen width
+  function adjustBoxHeight() {
+      var screenWidth = window.innerWidth;
+      var newHeight = 400; // Default height
+
+      if (screenWidth > 1300) {
+          newHeight = 400 + ((screenWidth - 1300) * 0.1); // Adjust height for wider screens
+      }
+
+      for (var i = 0; i < boxes.length; i++) {
+          boxes[i].style.minHeight = newHeight + 'px';
+      }
+  }
+
+  // Initial call to adjust box height
+  adjustBoxHeight();
+
+  // Call adjustBoxHeight() whenever the window is resized
+  window.addEventListener('resize', adjustBoxHeight);
+</script>
 
 <style>
     /* Submit button style */
     input[type="submit"] {
-      background-color: green;
+      background-color: orangered;
       color: white;
-      border: 1px solid green;
+      border: 1px solid orangered;
       padding: 8px 16px;
       cursor: pointer;
       width: fit-content;
@@ -248,7 +328,7 @@
     /* Hover effect */
     input[type="submit"]:hover {
       background-color: white;
-      color: green;
+      color: orangered;
     }
   
     /* Form container */
@@ -315,6 +395,32 @@
       font-family: 'Poiret One', cursive;
       margin-top: 0;
     }
+
+    /* Your existing styles */
+    @media (min-width: 768px) {
+        /* Adjustments for larger screens */
+        .form-container {
+            max-width: 30%; /* Increase the max-width for larger screens */
+            height: 30%;
+        }
+
+        .input-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* Adjust font size or padding for larger screens if necessary */
+        input,
+        textarea {
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+            
+        }
+    }
+
+    
   </style>
   
 
@@ -357,18 +463,22 @@
         <textarea id="best-time" name="best-time" rows="4" required></textarea>
       </div>
   
-      <input type="submit" value="Schedule Appointment">
+      <input type="submit" value="Schedule Appointment"  onclick="valuesetter()">
     </div>
   </div>
 </form>
 
-
-
+      
 <script>
+  
+  function valuesetter(){
+          localStorage.setItem('visitor-application', 'True');
+          }
+  </script>
 
 
 
-</script>
+
 
 
 
@@ -376,13 +486,13 @@
 
     <footer>
 
-        <img src="orangeredlogo2.png" alt="" width="210px" class="logo2">
+        <img src="/preview2/orangeredlogo2.png" alt="" width="200px" class="logo2">
         
         
         
         <div class="emailandphone">
         
-            <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:+13167899956">+13167899956</a>
+            <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:+13162911452">+13162911452</a>
         
             <img src="email-logo.png" alt="" width="30px" class="v2" style=" position: absolute;"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
         
@@ -405,18 +515,20 @@
         <div class="linkcolumn">
            
         
-            <a href="home.html">Home</a>
-            <a href="practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+          <a href="home.html">Home</a>
+          <a href="practiceareas/practiceareas.html">Practice Areas</a>
+          <a href="resources.html">Resources</a>
+          <a href="testimonals.html">Testimonals</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
         </div>
         
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-        </footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+      </footer>
         
         <script>
             if (navigator.userAgent.match(/Mobile/)) {
-document.getElementById('bgvid').src = 'mobilevid2.mp4';
+document.getElementById('bgvid').src = '/preview2/mobilevid2.mp4';
 
 }
         </script>
@@ -440,7 +552,7 @@ input{
     font-weight: 900;
     outline: none;
     padding: 5px 50px;
-    border: 1px solid green;
+    border: 1px solid orangered;
 }
 
 
@@ -454,9 +566,9 @@ margin-bottom: 12px;
 
   /* Submit button style */
   input[type="submit"] {
-    background-color: green;
+    background-color: orangered;
     color: white;
-    border: 1px solid green;
+    border: 1px solid orangered;
     padding: 8px 16px;
     cursor: pointer;
     transition: 0.5s;
@@ -465,7 +577,7 @@ margin-bottom: 12px;
   /* Hover effect */
   input[type="submit"]:hover {
     background-color: white;
-    color: green;
+    color: orangered;
   }
 
 .textarealabel{
@@ -476,7 +588,7 @@ margin-bottom: 12px;
 
 textarea{
     margin-left: 145px;
-    border: 1px solid green;
+    border: 1px solid orangered;
   height: 150px;
   font-family: 'Poiret One', cursive;
   font-weight: 900;
@@ -498,9 +610,9 @@ textarea{
 
   /* Submit button style */
   input[type="submit"] {
-    background-color: green;
+    background-color: orangered;
     color: white;
-    border: 1px solid green;
+    border: 1px solid orangered;
     padding: 8px 16px;
     cursor: pointer;
     width: fit-content;
@@ -510,7 +622,7 @@ textarea{
   /* Hover effect */
   input[type="submit"]:hover {
     background-color: white;
-    color: green;
+    color: orangered;
   }
 
   /* Form container */
@@ -663,15 +775,69 @@ input[type="submit"] {
 </style>
 
 <style>
-
-
-
-
+  
   .copywrite{
     left: 0px;
   }
 
+
+  @media screen and (min-width:1440px){
   
+
+  .copywrite{
+    left: 50px;
+  }
+}
+
+  
+@media screen and (max-width:600px) {
+
+    .phoneandemail{
+      display: none;
+      
+    }
+  
+    .copywrite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+  }
+
+
+
+.copywrite h1 {
+  margin: 0;
+  margin-top: -50px;
+}
+
+  
+.aboutme {
+  text-align: center; /* Center-align the content horizontally */
+}
+
+
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the content vertically and horizontally */
+  }
+
+  .aboutme h1,
+  .aboutme img
+  .aboutme a {
+    margin: 0 auto; /* Center-align the h1 and img within the flex container */
+  }
+
+
+
+}
+
+
+
 
 </style>
 

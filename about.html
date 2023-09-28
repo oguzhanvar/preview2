@@ -3,31 +3,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="/preview2/style2.css">
     <link href="https://fonts.cdnfonts.com/css/bright-sunshine" rel="stylesheet">
     <title>About</title>
 </head>
-<body>
-    <div class="menubtn">
-        <img src="menuicon.png" alt="" width="30px" style=" padding: 10px;" onclick="menuopening()">
-    </div>
+<body onscroll="Scroolling()">
+
     
-    
+        
     
     <div class="mobilenav" id="mobilenav">
     
     
         <div class="mobilecontent" id="mobilecontent">
             <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
-            <img src="w2.png" alt="" id="mobilelogo" width="200px" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
-            <a href="makeapayment.html" style="margin-top:150px; ">Make a payment</a>
-            <a href="practiceareas/practiceareas.html">Practice Areas</a>
+            <img src="/preview2/w2.png" alt="" width="100px" style="position: absolute; margin-top:70px; margin-left: 98px; z-index: 15;" onclick="location.href='/preview2/home.html'">
+            <a href="/preview2/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
+            <a href="/preview2/practiceareas/practiceareas.html">Practice Areas</a>
+            <a href="resources.html">Resources</a>
+            <a href="testimonals.html">Testimonals</a>
             <a href="about.html ">About Us</a>
             <a href="contact.html" >Contact</a>
     
-            <a href="">552 780 5255</a>
-            <a href="">Oguzhanvar30@gmail.com</a>
-            <a href="">The adress</a>
+            <a href=""><img src="/preview2/phone icon.png" alt="" style="margin-left:-23px;" width="20px">+13162911452</a>
+            <a href=""><img src="/preview2/email-logo.png" alt="" style="margin-left:-23px;" width="20px"> Oguzhanvar30@gmail.com</a>
+            <a href="" style="margin-left: 15px;">320 N Main, Wichita, KS 67202, United States</a>
         </div>
     </div>
     
@@ -48,23 +48,46 @@
     </script>
 
 
-    <div class="thetop">
 
-        <img src="orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'">
-        <div class="navbar">
-            <a href="makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
-            <a href="practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
-            <a href="about.html " style="margin-left: 350px;">About Us</a>
-            <a href="contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
-        </div>
-    
 
-    </div>
+<div class="thetop" id="thetop">
+  <div class="menubtn">
+   <img src="/preview2/orangemenu.png" alt="" width="20px" style=" padding: 10px; width: 40px; margin-left: -20px; margin-top: 0px;" onclick="menuopening()" id="icon">
+</div>
+<div class="logodiv">
+<img src="/preview2/orangeredlogo2.png" alt="" width="100px" onclick="location.href='/preview2/home.html'" style="cursor:pointer;">
+</div>
+<div class="navbar" id="navbar">
+   <a href="/preview2/makeapayment.html" class="make_payment" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+   <a href="resources.html">Resources</a>
+   <a href="/preview2/practiceareas/practiceareas.html" >Practice Areas</a>
+   <a href="testimonals.html" id="practice_a">Testimonals</a>
+   <a href="/preview2/about.html" id="about_a" >About Us</a>
+   <a href="/preview2/contact.html" class="contactbox" style=" border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+</div>
+</div>
+
+
+
+
+<script>
+  function Scroolling() {
+      var thetop = document.getElementById("thetop");
+      if (window.scrollY > 0) {
+          thetop.style.backgroundColor = "white";
+      } else {
+          thetop.style.backgroundColor = "transparent";
+      }
+  }
+</script>
+
+
+
 <div  class="titlediv">
 
 
-    <img src="greenlawyer.png" alt="" width="100%" class="aboutbg" id="thebg">
-    <img src="orangeredlogo.png" alt="" class="logo2">
+    <img src="/preview2/greenlawyer.png" alt="" width="100%" class="aboutbg" id="thebg">
+    <img src="/preview2/orangeredlogo.png" alt="" class="logo2">
 
     <h1 id="myprofile">Profile</h1>
 
@@ -76,83 +99,87 @@
 
 <h1>My Profile</h1>
 
-<img src="profilepic2.png" alt="" width="100%">
+<img src="/preview2/profilepic2.png" alt="" width="100%">
 
 <p>Welcome to the dedicated legal practice of 
-[Lawyer's Name], where unwavering commitment and
- comprehensive expertise converge to provide you with
- exceptional legal representation. With a passion for
- justice and a track record of success, [Lawyer's Name]
- brings a wealth of experience to each case, ensuring 
-that your rights are vigorously defended and your 
-interests are safeguarded.
+    Cotton and Pittman, where unwavering commitment and
+     comprehensive expertise converge to provide you with
+     exceptional legal representation. With a passion for
+     justice and a track record of success, Cotton and Pittman
+     brings a wealth of experience to each case, ensuring 
+    that your rights are vigorously defended and your 
+    interests are safeguarded.
+    
+    As a seasoned legal professional, Cotton and Pittman 
+    understands the complexities of the legal landscape 
+    and is adept at navigating its intricacies. With a keen 
+    attention to detail and a strategic approach, they have 
+    a proven ability to craft innovative legal strategies 
+    tailored to the unique circumstances of each client. 
+    Whether you're facing a challenging litigation battle
+     or seeking expert advice on matters ranging from 
+    corporate law to personal injury, Cotton and Pittman is
+     dedicated to securing the best possible outcome for
+     you.
+    
+    Beyond their legal prowess, Cotton and Pittman is known 
+    for their compassionate and client-centered approach
+    . They believe in fostering open lines of communication,
+     ensuring that you are well-informed and empowered
+     to make sound decisions throughout the legal process. 
+    Your concerns become their top priority, and they are
+     committed to providing timely and transparent updates
+     on the progress of your case.
+    
+    At Cotton and Pittman's firm, integrity and
+     professionalism form the cornerstone of every
+     interaction. Their unwavering commitment to 
+    ethical practices and their reputation for delivering 
+    results have earned them the respect of peers and 
+    clients alike. With Cotton and Pittman by your side, you 
+    can trust that your legal matters are in capable hands.
+    
+    Experience, dedication, and a genuine passion for
+     upholding justice make Cotton and Pittman a standout 
+    advocate in the legal realm. Contact their office today
+     to schedule a consultation and take the first step
+     towards securing a brighter legal future.
+    </p>
 
-As a seasoned legal professional, [Lawyer's Name] 
-understands the complexities of the legal landscape 
-and is adept at navigating its intricacies. With a keen 
-attention to detail and a strategic approach, they have 
-a proven ability to craft innovative legal strategies 
-tailored to the unique circumstances of each client. 
-Whether you're facing a challenging litigation battle
- or seeking expert advice on matters ranging from 
-corporate law to personal injury, [Lawyer's Name] is
- dedicated to securing the best possible outcome for
- you.
-
-Beyond their legal prowess, [Lawyer's Name] is known 
-for their compassionate and client-centered approach
-. They believe in fostering open lines of communication,
- ensuring that you are well-informed and empowered
- to make sound decisions throughout the legal process. 
-Your concerns become their top priority, and they are
- committed to providing timely and transparent updates
- on the progress of your case.
-
-At [Lawyer's Name]'s firm, integrity and
- professionalism form the cornerstone of every
- interaction. Their unwavering commitment to 
-ethical practices and their reputation for delivering 
-results have earned them the respect of peers and 
-clients alike. With [Lawyer's Name] by your side, you 
-can trust that your legal matters are in capable hands.
-
-Experience, dedication, and a genuine passion for
- upholding justice make [Lawyer's Name] a standout 
-advocate in the legal realm. Contact their office today
- to schedule a consultation and take the first step
- towards securing a brighter legal future.
-</p>
-
-    <a href="contact.html">Contact Now</a>
+    <a href="/preview2/contact.html">Contact Now</a>
 
 
 </div>
-
-
-
-
-
-
-
-
-
 
 
 </body>
 
 
 
+<style>
+    .logo2{
+        margin-top: -60px;
+    }
+</style>
+
+
+
+
+
+
+
+
 <footer>
 
-    <img src="white logo.png" alt="" width="200px" id="footerlogo">
+    <img src="/preview2/white logo.png" alt="" width="200px" id="footerlogo">
     
     
     
     <div class="emailandphone">
     
-        <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:5527805255">5527805255</a>
+        <img src="/preview2/phone icon.png" alt="" width="30px" class="v"><a href="tel:+13162911452">+13162911452</a>
     
-        <img src="email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
+        <img src="/preview2/email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
     
     
     </div>
@@ -160,7 +187,7 @@ advocate in the legal realm. Contact their office today
     
     
     <div class="theadress">
-        <img src="adressicon.png" alt="" width="30px" style="position:absolute;"><br>
+        <img src="/preview2/adressicon.png" alt="" width="30px" style="position:absolute;"><br>
         <p>The adress</p>
     </div>
     
@@ -172,8 +199,83 @@ advocate in the legal realm. Contact their office today
             
         }
         .emailandphone{
+            margin-top: 220px;
             margin-left: 250px;
         }
+        iframe{
+            margin-top: -100px;
+        }
+
+
+        .titlediv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    height: 758px;
+    
+}
+
+.aboutbg {
+    width: 100%;
+}
+
+.logo2 {
+    width: 700px;
+    margin-top: -120px; /* Adjust as needed */
+}
+
+#myprofile {
+    font-family: 'Bright Sunshine', sans-serif;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    color: orangered;
+    font-size: 80px;
+    font-weight: 100;
+    z-index: 1;
+    top: 350px;
+    padding: 10px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+        @media only screen and (max-width: 600px) {
+
+.titlediv h1{
+    margin-left:120px ;
+ margin-top: 160px;
+}
+footer{
+    top: 1900px
+}
+.logo2{
+    width: 300px;
+    margin-top: -190px;
+    left: -50px;
+}
+
+#theprofile{
+    font-size: 70px;
+}
+
+
+
+}
+@media screen and (max-width:600px) {
+        iframe{
+            margin-top: 120px;
+        }
+    
+    }
+
+
+
+
+
+
     </style>
 
 
@@ -185,66 +287,23 @@ advocate in the legal realm. Contact their office today
        
     
         <a href="home.html">Home</a>
-            <a href="practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+        <a href="practiceareas/practiceareas.html">Practice Areas</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonals.html">Testimonals</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+</footer>
 
 
 
 <style>
 
 @media screen and (max-width:600px) {
-    .thetop img{
-        width: 100px;
-        margin-left:170px;
-    }
 
-
-    .logo2{
-        margin-left: 115px;
-        top: 100px;
-    }
-
-
-    #myprofile{
-        left: 90px;
-        top: 360px;
-        font-size: 50px;
-    }
-
-    .aboutme img{
-        margin-left: 0px;
-    }
-
-    .aboutme h1{
-      margin-left: 60px;
-    }
-
-    .aboutme p{
-        font-family: 'Manrope', sans-serif;
-        left: -210px;
-        width: 400px;
-        color:black;
-        text-align: center;
-    }
-
-        .aboutme a{
-            margin-top: 1000px;
-            margin-left: -280px;
-        }
-
-
-}
-
-
-@media screen and (max-width:376px){
-    .thetop img{
-        width: 150px;
-        margin-left:140px;
-    }
 
 
     .logo2{
@@ -253,10 +312,55 @@ advocate in the legal realm. Contact their office today
 
 
     #myprofile{
-        left: 80px;
-        top: 160px;
+        left: 60px;
+        top: 190px;
         font-size: 50px;
     }
+
+    .aboutme img{
+        margin-left: 0px;
+    }
+
+    .aboutme h1{
+        font-size: 50px;
+      margin-left: 60px;
+    }
+
+    .aboutme p{
+        font-family: 'Manrope', sans-serif;
+        left: -210px;
+        font-size: 16px;
+        width: 400px;
+        color:black;
+        text-align: center;
+    }
+
+        .aboutme a{
+            margin-top: 1200px;
+            margin-left: -280px;
+        }
+
+        .emailandphone{
+            margin-top: 100px;
+            margin-left: 235px;
+        }
+.linkcolumn{
+    margin-left: -100px;
+}
+}
+
+
+@media screen and (max-width:376px){
+
+
+
+    .logo2{
+        margin-left: 95px;
+    }
+
+
+
+    
 
     .aboutme img{
         margin-left: 0px;
@@ -265,6 +369,7 @@ advocate in the legal realm. Contact their office today
 
     .aboutme h1{
       margin-left: 40px;
+      font-size: 61px;
     }
 
     .aboutme p{
@@ -276,8 +381,8 @@ advocate in the legal realm. Contact their office today
     }
 
         .aboutme a{
-            margin-top: 900px;
-            margin-left: 110px;
+            margin-top: 1100px;
+            margin-left: 120px;
         }
 
 
@@ -289,11 +394,7 @@ advocate in the legal realm. Contact their office today
 
 
 @media screen and (max-width:321px){
-    .thetop img{
-        width: 150px;
-        margin-left:140px;
-    }
-
+ 
 
     .logo2{
         margin-left: 75px;
@@ -340,7 +441,7 @@ advocate in the legal realm. Contact their office today
 
 <script>
     if (navigator.userAgent.match(/Mobile/)) {
-document.getElementById('thebg').src = 'greenlawyermobile.png';
+document.getElementById('thebg').src = '/preview2/greenlawyermobile.png';
 
 }
 </script>

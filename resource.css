@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Quicksand&family=Titillium+Web:wght@200&display=swap');
+
+
+.thetop{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+   height: 35px;
+    padding-bottom: 30px;
+    z-index: 5;
+    transition: 0.4s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    
+    margin: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 5;
+    /* ... other styles ... */
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+
+    
+}
+
+.navbar.scrolled {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 5;
+    margin-top: -20px;
+    padding-top: 40px;
+}
+
+.thetop.scrolled img {
+    position: fixed;
+    margin-left: 41%;
+
+    cursor: pointer;
+    z-index: 6;
+}
+
+
+
+
+
+
+
+
+
+
+
+.thetop img{
+    position: absolute;
+       margin-left: 45%;
+       cursor: pointer;
+       z-index: 6;
+   }
+   
+   
+   .navbar{
+       margin:0;
+
+       margin-left: 2%;
+       font-family: 'Manrope', sans-serif;
+   }
+   
+   .navbar a{
+       color: #ff4400;
+       text-decoration: none;
+       transition: 0.5s;
+   }
+   
+   .navbar a:hover{
+       color: white;
+       border-bottom: 1px solid white;
+      
+       }
+   
+   #boxlinks:hover{
+   
+       background-color: orangered;
+   color: white;
+   }
+   
+
+.toplinks{
+    margin-left: 180px;
+    margin-top: 35px;
+}
+img{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.toplinks a{
+color: black;
+text-decoration: none;
+
+margin-right: 40px;
+}
+
+body{
+    margin: 0;
+}
+
+
+footer{
+    position: absolute;
+    margin-top: 4000px;
+    height: 720px;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+
+.theadress{
+    margin-left: 0%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.theadress p{
+    margin-left: 25px;
+}
+
+.linkcolumn{
+    margin-top: 50px;
+    margin-left: 90%;
+}
+
+.linkcolumn a{
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+            
+}
+
+
+.linkcolumn a:hover{
+    text-decoration: underline;
+}
+
+
+
+.theadress{
+    display: none;
+}
+
+
+
+.menubtn{
+    margin-right: 10%;
+    cursor: pointer;
+    display: none;
+    padding: 30px;
+    padding-top: 0px;
+}
+
+
+.mobilenav{
+    position: fixed;
+    height: 768px;
+    top: 0;
+    margin-left: 100%;
+    transition: 0.8s;
+    z-index: 8;
+}
+
+.mobilenav img{
+
+    z-index: 3;
+}
+
+
+.mobilecontent{
+    height: 100%;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    width: 0;
+    background-color: orangered;    
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    transition: 0.8s;
+}
+
+
+
+.contact{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+.mobilecontent a{
+text-align: center;
+
+color: white;
+float: left;
+width: 300px;
+text-decoration: none;
+margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .thetop a{
+        display: none;
+    }
+    
+
+
+
+    .menubtn{
+        display: block;
+        z-index: 15;
+    }
+    .menubtn img{
+        z-index: 21;
+    }
+
+    
+    .thetop img{
+        top: -30px;
+        margin-left: 34%;
+        width: 100px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    iframe{
+        margin-top: 180px;
+        width: 100%;
+    }
+.linkcolumn{
+    margin-left: 0px;
+}
+.theadress{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 100px;
+}
+    footer{
+        top:1600px ;
+        width: 500px;
+    }
+    .thetop{
+        top: 0;
+    }
+    .thetop img{
+        position: absolute;
+        margin-top: 0px;
+        top: 0;
+        margin-left: 23%;
+    }
+
+
+    .linkcolumn{
+        margin-left: -90px;
+        margin-top: 130px;
+        text-align: center;
+    }
+
+
+    #footerlogo{
+        margin-left: 100px;
+        margin-top: -30px;
+    }
+    
+
+
+body{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    margin: 0;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar a {
+    color: #ff4400;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#boxlinks:hover {
+    background-color: orangered;
+    color: white;
+}
+
+/* Styles for larger screens */
+/* Common styles for .navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar a {
+    color: #ff4400;
+    text-decoration: none;
+    transition: 0.5s;
+  
+}
+
+.navbar a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#boxlinks:hover {
+    background-color: orangered;
+    color: white;
+
+}
+
+.v{
+    margin-left: -33px;
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 30px;
+       
+        z-index: 5;
+    }
+
+    .navbar a {
+
+
+        margin: 0 10px; /* Add spacing between links */
+        margin-top: 10px;
+    }
+
+    #practice_a {
+        margin-left: auto; /* Push "Practice Areas" to the right */
+    }
+
+    .thetop img {
+        position: fixed;
+        margin-left: 46%;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+
+}
+}
+
+
+@media screen and (min-width:1600px) {
+    .logodiv{
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (min-width:1800px) {
+    .logodiv{
+        margin-left: 30px;
+    }
+}
+
+
+
+
+/* Styles for larger screens */
+@media only screen and (min-width: 768px) {
+
+    .navbar a {
+
+
+        margin: 0 20px; /* Add spacing between links */
+        margin-top: 45px;
+    }
+
+    #practice_a {
+        margin-left:250px; /* Push "Practice Areas" to the right */
+    }
+
+    .thetop img {
+        position: fixed;
+        margin-top: 25px;
+        cursor: pointer;
+        z-index: 6;
+
+    }
+    .logodiv{
+        position: fixed;
+       left:44%;
+       z-index: 7;
+       margin-top: -70px;
+        transform: translateX(-40%);
+    }
+    .thetop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        font-family: 'Manrope', sans-serif;
+    }
+}
+.contactbox{
+    position: fixed;
+    right: 0;
+}
+.make_payment{
+    position: fixed;
+    left: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    max-width: 100%;
+}
+a{
+    cursor: pointer;
+}
+
+
+#boxes{
+    margin-top: 220px;
+}
+
+.maintitle{
+    font-family: 'Cairo', sans-serif;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+.download-box {
+    margin-top: 120px;
+    background-color: white;
+    color: orangered;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    height: 180px;
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered;
+
+
+}
+
+.title {
+    font-family: 'Cairo', sans-serif;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    max-width: 100%;
+    margin-left: 2.5%;
+}
+
+em{
+    font-style: normal;
+}
+
+span{
+
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+
+.download_button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -150px;
+    
+}
+
+.download-link {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    padding: 10px 35px;
+    padding-left: 57px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid orangered;
+    transition: 0.5s;
+}
+
+.save-icon {
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+
+
+}
+
+.save-icon img{
+    transition: all 0.5s ease-in-out;
+    
+    position: absolute;
+    margin-left: -33px;
+    margin-top: -10px;
+  
+
+    
+}
+.download-link:hover .save-icon img {
+    transform: scale(1); /* Or any other effect you want to apply on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-title{
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight:lighter;
+
+  }
+ 
+  .form-container {
+    transition: 0.5s;
+    position: fixed;
+    opacity: 0;
+    background-color: orangered;
+    border: 1px solid white;
+    padding: 20px;
+    height: 500px;
+    top:0;
+    margin-left: 25%;
+    width: 50%;
+
+    z-index: 7;
+
+  }
+  .form-group {
+
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 20px;
+  }
+
+  .submit-btn {
+    position: absolute;
+    font-family: 'Cairo', sans-serif;
+    border: 1px solid white;
+    display: block;
+    width: 100%;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: white;
+    color: orangered;
+    transition: 0.5s;
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 300px;
+    top: 140px;
+    margin-left: 10px;
+
+  
+  }
+
+  .submit-btn:hover{
+    background-color: orangered;
+    color: white;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+
+  }
+  input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    transition: 0.5s;
+  }
+
+  input:focus{
+    border-color: white;
+    color: orangered;
+    background-color: white;
+  }
+
+
+
+  @media screen and (max-width:600px) {
+    .form-container {
+    padding: 20px;
+    height: 90%;
+    border: none;
+    margin-left: 0;
+    margin-top: 0;
+    width: 90%;
+      }
+
+    .form-title{
+        font-size: 12px;
+        max-width: 300px;
+        margin-bottom: 40px;
+    }
+    input{
+        margin-top: 0;
+        padding: 2px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .download-box {
+        margin-bottom: 200px;
+        padding-bottom: 300px;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    span{
+        text-align: center;
+    }
+
+    .download_button{
+ 
+        justify-content:center;
+
+    }
+    .download-link{
+        margin-top: 30%;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    
+    .download_button{
+        margin-top: -60px;
+    }
+    .title img{
+    display: none;
+    }
+    }  

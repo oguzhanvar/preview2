@@ -7,73 +7,87 @@
     <link href="https://fonts.cdnfonts.com/css/bright-sunshine" rel="stylesheet">
     <title>Contact</title>
 </head>
-<body>
-    <div class="menubtn">
-        <img src="orangemenu.png" alt="" width="50px" style=" padding: 10px;" onclick="menuopening()">
+<body onscroll="Scroolling()">    
+    
+       
+    
+  <div class="mobilenav" id="mobilenav">
+    
+    
+    <div class="mobilecontent" id="mobilecontent">
+        <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
+        <img src="/preview2/w2.png" alt="" width="100px" style="position: absolute; margin-top:70px; margin-left: 98px; z-index: 15;" onclick="location.href='/preview2/home.html'">
+        <a href="/preview2/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
+        <a href="/preview2/practiceareas/practiceareas.html">Practice Areas</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonals.html">Testimonals</a>
+        <a href="about.html ">About Us</a>
+        <a href="contact.html" >Contact</a>
+
+        <a href=""><img src="/preview2/phone icon.png" alt="" style="margin-left:-23px;" width="20px">+13162911452</a>
+        <a href=""><img src="/preview2/email-logo.png" alt="" style="margin-left:-23px;" width="20px"> Oguzhanvar30@gmail.com</a>
+        <a href="" style="margin-left: 15px;">320 N Main, Wichita, KS 67202, United States</a>
     </div>
+</div>
+
+<script>
+
+function menuopening() {
+    document.getElementById("mobilecontent").style.paddingRight="400px";
+    document.getElementById("mobilenav").style.marginLeft="10%";
+    document.getElementById("mobilenav").style.width="100%";
+}    
+
+function closemenu() {
+    document.getElementById("mobilenav").style.marginLeft="100%";
+    document.getElementById("mobilecontent").style.paddingRight="0px";
     
-    
-    
-    <div class="mobilenav" id="mobilenav">
-    
-    
-        <div class="mobilecontent" id="mobilecontent">
-            <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
-            <img src="w2.png" alt="" width="200px" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
-            <a href="makeapayment.html" style="margin-top:150px; ">Make a payment</a>
-            <a href="practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="about.html ">About Us</a>
-            <a href="contact.html" >Contact</a>
-    
-            <a href="">552 780 5255</a>
-            <a href="">Oguzhanvar30@gmail.com</a>
-            <a href="">The adress</a>
-        </div>
-    </div>
-    
-    <script>
-    
-    function menuopening() {
-        document.getElementById("mobilecontent").style.paddingRight="400px";
-        document.getElementById("mobilenav").style.marginLeft="10%";
-        document.getElementById("mobilenav").style.width="100%";
-    }    
-    
-    function closemenu() {
-        document.getElementById("mobilenav").style.marginLeft="100%";
-        document.getElementById("mobilecontent").style.paddingRight="0px";
-        
-    }
-    
-    </script>
+}
+
+</script>
 
 
-    <div class="thetop" style="position:absolute; top: 0;">
-
-        <img src="orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'">
-        <div class="navbar">
-            <a href="makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
-            <a href="practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
-            <a href="about.html " style="margin-left: 350px;">About Us</a>
-            <a href="contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
-        </div>
-    
-
-    </div>
 
 
+<div class="thetop" id="thetop">
+<div class="menubtn">
+<img src="/preview2/orangemenu.png" alt="" width="20px" style=" padding: 10px; width: 40px; margin-left: -20px; margin-top: 0px;" onclick="menuopening()" id="icon">
+</div>
+<div class="logodiv">
+<img src="/preview2/orangeredlogo2.png" alt="" width="100px" onclick="location.href='/preview2/home.html'" style="cursor:pointer;">
+</div>
+<div class="navbar" id="navbar">
+<a href="/preview2/makeapayment.html" class="make_payment" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+<a href="resources.html">Resources</a>
+<a href="/preview2/practiceareas/practiceareas.html" >Practice Areas</a>
+<a href="testimonals.html" id="practice_a">Testimonals</a>
+<a href="/preview2/about.html" id="about_a" >About Us</a>
+<a href="/preview2/contact.html" class="contactbox" style=" border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+</div>
+</div>
+
+<script>
+  function Scroolling() {
+      var thetop = document.getElementById("thetop");
+      if (window.scrollY > 0) {
+          thetop.style.backgroundColor = "white";
+      } else {
+          thetop.style.backgroundColor = "transparent";
+      }
+  }
+</script>
 
 
     <style>
           @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
         /* Submit button style */
         input[type="submit"] {
-          background-color: green;
+          background-color: orangered;
           color: white;
-          border: 1px solid green;
+          border: 1px solid orangered;
           padding: 8px 16px;
           cursor: pointer;
-          width: fit-content;
+          transition: 0.5s;
           margin-left: auto;
           margin-right: auto;
           display: block;
@@ -83,7 +97,7 @@
         /* Hover effect */
         input[type="submit"]:hover {
           background-color: white;
-          color: green;
+          color: orangered;
         }
       
         input{
@@ -91,13 +105,13 @@
     font-weight: 900;
     outline: none;
     padding: 5px 50px;
-    border: 1px solid green;
+    border: 1px solid orangered;
 }
 
 
 textarea{
     outline: none;
-    border: 1px solid green;
+    border: 1px solid orangered;
   height: 150px;
   font-family: 'Poiret One', cursive;
   font-weight: 900;
@@ -175,19 +189,6 @@ textarea{
      
       margin-top: 150px;
     }
-
-    @media screen and (max-width:600px){
-        .thetop img{
-          margin-left: 150px;
-        }
-      
-        #footerlogo{
-          width: 150px;
-          margin-top: 1px;
-          margin-left: 26%;
-        }
-      }
-
       </style>
       
     
@@ -226,33 +227,65 @@ textarea{
           </div>
       
           <div class="thetextarea">
-            <label for="best-time">Explain us your case:</label>
+            <label for="best-time">Explain us your case: </label>
             <textarea id="best-time" name="best-time" rows="4" required></textarea>
           </div>
       
-          <input type="submit" value="Schedule Appointment">
+          <input type="submit" value="Schedule Appointment" onclick="valuesetter()"> 
         </div>
       </div>
     </form>
       
+<script>
+  
+function valuesetter(){
+        localStorage.setItem('visitor-application', 'True');
+        }
+</script>
+<style>
+  input[type=submit]{
+    z-index: 9;
+  }
+</style>
 
     <div class="phoneandemail">
-      <a href="tel:+13167899956"><img src="phone icon.png" alt="" width="30px"><span> +13167899956</span></a>
-      <a href="mailto:oguzhanvar30@gmail.com"  id="emailone"><img src="email-logo.png" alt="" width="30px"> <span> oguzhanvar30@gmail.com</span></a>
-  
+      <a href="tel:+13162911452" id="phone-link">
+        <img src="phone icon.png" alt="" width="30px">
+        <span> +13162911452</span>
+       </a>
+            
+      <a href="mailto:oguzhanvar30@gmail.com" id="email-link">
+      <img src="email-logo.png" alt="" width="30px">
+      <span> oguzhanvar30@gmail.com</span>
+      </a>
   </div>
   <div class="mrframe">
-  <iframe class="theframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="theframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <style>
+
+.phoneandemail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%; /* Add this to limit container width */
+}
+
+#emailone {
+ 
+  flex: 0 0 auto; /* This prevents the item from growing or shrinking */
+
+}
+
+.phoneandemail a{
+  margin-right: 20px;
+  
+}
 
     span{
       margin-left: 35px;
     }
 
-    #emailone{
-      margin-left:65%;
-    }
 
 
 .theframe{
@@ -284,13 +317,13 @@ textarea{
     padding: 10px 20px;
     text-decoration: none;
     border: 1px solid orangered;
-  margin-right: -100px;
+
     transition: 0.5s;
 }
 
 .phoneandemail a:hover{
-background-color: orangered;
-color: white;
+  background-color: white;
+color: orangered;
 }
 
 
@@ -299,7 +332,7 @@ color: white;
   
   .phoneandemail{
     display: block;
-    margin-left: 110px;
+    margin-left: 24%;
     margin-bottom: 100px;
     margin-top: 120px;
   }
@@ -321,8 +354,9 @@ color: white;
 
 
 }
+</style>
 
-  </style>
+
 
 </body>
 
@@ -336,7 +370,7 @@ color: white;
     
     <div class="emailandphone">
     
-        <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:5527805255">5527805255</a>
+        <img src="phone icon.png" alt="" width="30px" class="v"><a href="tel:+13162911452">+13162911452</a>
     
         <img src="email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
     
@@ -361,33 +395,59 @@ color: white;
     
       <a href="home.html">Home</a>
       <a href="practiceareas/practiceareas.html">Practice Areas</a>
+      <a href="resources.html">Resources</a>
+      <a href="testimonals.html">Testimonals</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
     </div>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-    </footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
 
     <style>
     footer{
         margin-top: 400px;
         height: 720px;
       }
+
+            
       .emailandphone{
     position: absolute;
-        top: 220px;
-    left: 250px;
+        left: 110px;
+        top: 150px;
+}
+
+iframe{
+            margin-top: -100px;
+        }
+
+
+      @media screen and (max-width:600px){
+        footer{
+    top: 1200px
+}
+      
+        .emailandphone{
+    position: absolute;
+    top: 500px;
+    left: 50px;
     width: 500px;
     margin: 0;
 }
 
-
-@media screen and (max-width:600px) {
-.emailandphone{
-  top: 400px;
-  left: 50px;
-}
+.emailandphone a{
+margin: 0;
+margin-right: 20px;
 }
 
+      }
+
+
+      @media screen and (max-width:600px) {
+        iframe{
+            margin-top: 120px;
+        }
+    }
+    
     </style>
 
 </html>
