@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/preview2/style2.css">
     <link href="https://fonts.cdnfonts.com/css/bright-sunshine" rel="stylesheet">
-    <title>Child Custody Solutions</title>
+    <title>Child Custody</title>
 </head>
-<body>
-    <div class="menubtn">
-        <img src="/preview2/menuicon.png" alt="" width="50px" style=" padding: 10px;" onclick="menuopening()">
-    </div>
+<body onscroll="Scroolling()">
     
-    
+       
     
     <div class="mobilenav" id="mobilenav">
     
     
         <div class="mobilecontent" id="mobilecontent">
-            <img src="/preview2/closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
-            <img src="/preview2/w2.png" alt="" width="200px"  id="mobilelogo" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
-            <a href="/preview2/makeapayment.html" style="margin-top:150px;">Make a payment</a>
+            <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
+            <img src="/preview2/w2.png" alt="" width="100px" style="position: absolute; margin-top:70px; margin-left: 98px; z-index: 15;" onclick="location.href='/preview2/home.html'">
+            <a href="/preview2/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
             <a href="/preview2/practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="/preview2/about.html ">About Us</a>
-            <a href="/preview2/contact.html" >Contact</a>
+            <a href="resources.html">Resources</a>
+            <a href="testimonals.html">Testimonals</a>
+            <a href="about.html ">About Us</a>
+            <a href="contact.html" >Contact</a>
     
-            <a href="">552 780 5255</a>
-            <a href="">Oguzhanvar30@gmail.com</a>
-            <a href="">The adress</a>
+            <a href=""><img src="/preview2/phone icon.png" alt="" style="margin-left:-23px;" width="20px">+13162911452</a>
+            <a href=""><img src="/preview2/email-logo.png" alt="" style="margin-left:-23px;" width="20px"> Oguzhanvar30@gmail.com</a>
+            <a href="" style="margin-left: 15px;">320 N Main, Wichita, KS 67202, United States</a>
         </div>
     </div>
     
@@ -48,30 +47,114 @@
     </script>
 
 
-    <div class="thetop">
 
-        <img src="/preview2/orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'">
-        <div class="navbar">
-            <a href="/preview2/makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
-            <a href="/preview2/practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
-            <a href="/preview2/about.html " style="margin-left: 350px;">About Us</a>
-            <a href="/preview2/contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+
+<div class="thetop" id="thetop">
+  <div class="menubtn">
+   <img src="/preview2/orangemenu.png" alt="" width="20px" style=" padding: 10px; width: 40px; margin-left: -20px; margin-top: 0px;" onclick="menuopening()" id="icon">
+</div>
+<div class="logodiv">
+<img src="/preview2/orangeredlogo2.png" alt="" width="100px" onclick="location.href='/preview2/home.html'" style="cursor:pointer;">
+</div>
+<div class="navbar" id="navbar">
+   <a href="/preview2/makeapayment.html" class="make_payment" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+   <a href="/preview2/resources.html">Resources</a>
+   <a href="/preview2/practiceareas/practiceareas.html" >Practice Areas</a>
+   <a href="/preview2/testimonals.html" id="practice_a">Testimonals</a>
+   <a href="/preview2/about.html" id="about_a" >About Us</a>
+   <a href="/preview2/contact.html" class="contactbox" style=" border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+</div>
+</div>
+
+  <script>
+    function Scroolling() {
+        var thetop = document.getElementById("thetop");
+        if (window.scrollY > 0) {
+            thetop.style.backgroundColor = "white";
+        } else {
+            thetop.style.backgroundColor = "transparent";
+        }
+    }
+</script>
+
     
-        </div>
-    
+<style>
+
+
+.aboutservice{
+    margin-top: 200px;
+}
+
+
+.aboutservice a{
+    margin-top: 1000px;
+}
+
+
+
+
+.moreaboutservice{
+    margin-top: 1000px;
+}
+
+.moreaboutservice p{
+
+margin-top: 290px;
+
+
+}
+
+.moreaboutservice a{
+    margin-top: 500px
+}
+
+    .titlediv {
+    font-family: 'Kanit', sans-serif;
+    height: 758px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add this line */
+}
+
+.titlediv h1 {
+    font-family: 'Bright Sunshine', sans-serif;
+    width: 839px;
+    color: orangered;
+    font-size: 80px;
+    font-weight: 100;
+    position: absolute; /* Change to absolute positioning */
+    top: 20%; /* Position at vertical center */
+    left: 55%; /* Position at horizontal center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    margin: 0; /* Reset margin */
+}
+
+.mslogo {
+    width: 200px;
+    position: absolute; /* Change to absolute positioning */
+    top: 70%; /* Position at vertical center */
+    left: 50%; /* Position at horizontal center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+</style>
+
     
 
-    </div>
-<div class="titlediv">
+
+    <div class="titlediv">
 
 
     <img src="/preview2/divırce.png" alt="" width="100%" class="aboutbg" id="thebg">
 
 
     <h1>Child Custody Solutions</h1>
-<img src="/preview2/orangeredlogo2.png" alt="" class="mslogo" width="150px">
+<img src="/preview2/orangeredlogo2.png" alt="" class="mslogo" width="250px">
     <div class="phonelogoemail" id="phoneandemail">
-        <a href="tel:5527805255" style="margin-right:800px; margin-left:35px;" >(+90)552-780-5255</a>
+        <a href="tel:+13162911452" style="margin-right:800px; margin-left:35px;" >+13162911452</a>
         <a href="mailto:" >oguzhanvar30@gmail.com</a>
   
 
@@ -81,114 +164,115 @@
 </div>
 
 
+
 <div class="aboutservice">
 
-<img src="/preview2/profilepic2.png" alt="" width="600px">
-
-<p>When parents face the complex and emotionally 
-charged issue of child custody, it's crucial to explore
- viable solutions that prioritize the well-being of the
- child. One such avenue is negotiation through 
-mediation, a collaborative process where both parties
- work with a neutral mediator to craft a custody 
-agreement that suits the unique needs of the family.
- Mediation offers a less adversarial approach, fostering
- open communication and reducing the stress often
- associated with court battles. It empowers parents to
- make joint decisions about their child's upbringing, 
-fostering a sense of cooperation even after the custody
- arrangement is finalized.
-
-In cases where mediation isn't feasible due to 
-significant disagreements or strained communication,
- seeking legal representation becomes imperative. An
- experienced family lawyer can provide valuable 
-guidance through the legal complexities of child 
-custody proceedings. They will assess the unique 
-circumstances of your case, offer strategic advice,
- and advocate for your parental rights. Your attorney
- can help you compile necessary documentation, such
-as evidence of your involvement in the child's life, 
-financial stability, and the ability to provide a nurturing
- environment. With legal expertise on your side, you
- can navigate the intricate legal processes with 
-confidence, ensuring your voice is heard in court.
-</p>
-
-            <a href="">Contact Us</a>
-
-
-</div>
-
-<div class="moreaboutservice">
-
-<img src="/preview2/bluecustody.png" alt="" width="100%" >
-
-<p>The child custody process involves a series of legal
- steps aimed at determining the most suitable living 
-and decision-making arrangement for the child. It
- typically commences with the filing of a custody 
-petition, officially initiating the legal proceedings. 
-Both parents present their cases, providing evidence
- and arguments that showcase their ability to care for
- and support their child. Courts weigh various factors,
- including the child's age, physical and emotional 
-needs, and the parents' ability to provide a stable 
-environment. Additionally, courts may appoint a 
-custody evaluator to assess family dynamics and 
-offer expert recommendations.
-
-Throughout the process, effective communication 
-with your attorney is essential. Responding promptly
- to court requests, adhering to court orders, and 
-presenting a compelling case can significantly impact
- the final custody decision. It's important to prepare 
-for a range of outcomes, as custody arrangements 
-can vary based on the specific circumstances. The
- court's ultimate goal is to promote the child's
- well-being and ensure their physical, emotional, 
-and psychological needs are met in the chosen 
-arrangement.</p>
-
-            <a href="">Contact Us</a>
-
-</div>
-<div class="moreaboutservice2">
-
-    <img src="/preview2/redcustody.png" alt="" width="600px" >
+    <img src="/preview2/profilepic2.png" alt="" width="600px">
     
-    <p>Child custody laws differ by jurisdiction, but they 
-all share a common goal: to serve the child's best
- interests. Courts may grant physical custody 
-(where the child resides) and legal custody (authority 
-to make decisions) to one or both parents. Joint custody
- is often favored, encouraging parents to work together
- in raising their child even after separation. However,
- circumstances such as a history of abuse, neglect, or 
-substance misuse can influence custody decisions. 
-The child's preferences may also be considered, 
-particularly if they are mature enough to express a
- reasoned opinion.
-
-To maximize your chances of a favorable custody 
-outcome, maintain an active presence in your child's
- life, demonstrate your commitment to their well-being,
- and collaborate constructively with the legal system. 
-Preparation is key; gather relevant documentation,
- engage in open communication with your attorney,
- and approach the process with a focus on creating a 
-nurturing and stable environment for your child's 
-growth and development. By understanding the
-nuances of child custody and engaging in a thoughtful 
-approach, you can navigate this challenging process 
-and secure the best possible arrangement for your child.
-</p>
+    <p>When parents face the complex and emotionally 
+    charged issue of child custody, it's crucial to explore
+     viable solutions that prioritize the well-being of the
+     child. One such avenue is negotiation through 
+    mediation, a collaborative process where both parties
+     work with a neutral mediator to craft a custody 
+    agreement that suits the unique needs of the family.
+     Mediation offers a less adversarial approach, fostering
+     open communication and reducing the stress often
+     associated with court battles. It empowers parents to
+     make joint decisions about their child's upbringing, 
+    fostering a sense of cooperation even after the custody
+     arrangement is finalized.
+    
+    In cases where mediation isn't feasible due to 
+    significant disagreements or strained communication,
+     seeking legal representation becomes imperative. An
+     experienced family lawyer can provide valuable 
+    guidance through the legal complexities of child 
+    custody proceedings. They will assess the unique 
+    circumstances of your case, offer strategic advice,
+     and advocate for your parental rights. Your attorney
+     can help you compile necessary documentation, such
+    as evidence of your involvement in the child's life, 
+    financial stability, and the ability to provide a nurturing
+     environment. With legal expertise on your side, you
+     can navigate the intricate legal processes with 
+    confidence, ensuring your voice is heard in court.
+    </p>
     
                 <a href="">Contact Us</a>
     
-    </div
-</body>
-
+    
+    </div>
+    
+    <div class="moreaboutservice">
+    
+    <img src="/preview2/bluecustody.png" alt="" width="100%" >
+    
+    <p>The child custody process involves a series of legal
+     steps aimed at determining the most suitable living 
+    and decision-making arrangement for the child. It
+     typically commences with the filing of a custody 
+    petition, officially initiating the legal proceedings. 
+    Both parents present their cases, providing evidence
+     and arguments that showcase their ability to care for
+     and support their child. Courts weigh various factors,
+     including the child's age, physical and emotional 
+    needs, and the parents' ability to provide a stable 
+    environment. Additionally, courts may appoint a 
+    custody evaluator to assess family dynamics and 
+    offer expert recommendations.
+    
+    Throughout the process, effective communication 
+    with your attorney is essential. Responding promptly
+     to court requests, adhering to court orders, and 
+    presenting a compelling case can significantly impact
+     the final custody decision. It's important to prepare 
+    for a range of outcomes, as custody arrangements 
+    can vary based on the specific circumstances. The
+     court's ultimate goal is to promote the child's
+     well-being and ensure their physical, emotional, 
+    and psychological needs are met in the chosen 
+    arrangement.</p>
+    
+                <a href="">Contact Us</a>
+    
+    </div>
+    <div class="moreaboutservice2">
+    
+        <img src="/preview2/redcustody.png" alt="" width="600px" >
+        
+        <p>Child custody laws differ by jurisdiction, but they 
+    all share a common goal: to serve the child's best
+     interests. Courts may grant physical custody 
+    (where the child resides) and legal custody (authority 
+    to make decisions) to one or both parents. Joint custody
+     is often favored, encouraging parents to work together
+     in raising their child even after separation. However,
+     circumstances such as a history of abuse, neglect, or 
+    substance misuse can influence custody decisions. 
+    The child's preferences may also be considered, 
+    particularly if they are mature enough to express a
+     reasoned opinion.
+    
+    To maximize your chances of a favorable custody 
+    outcome, maintain an active presence in your child's
+     life, demonstrate your commitment to their well-being,
+     and collaborate constructively with the legal system. 
+    Preparation is key; gather relevant documentation,
+     engage in open communication with your attorney,
+     and approach the process with a focus on creating a 
+    nurturing and stable environment for your child's 
+    growth and development. By understanding the
+    nuances of child custody and engaging in a thoughtful 
+    approach, you can navigate this challenging process 
+    and secure the best possible arrangement for your child.
+    </p>
+        
+                    <a href="">Contact Us</a>
+        
+        </div>
+    </body>
+    
 
 <footer>
 
@@ -198,7 +282,7 @@ and secure the best possible arrangement for your child.
     
     <div class="emailandphone">
     
-        <img src="/preview2/phone icon.png" alt="" width="30px" class="v"><a href="tel:5527805255">5527805255</a>
+        <img src="/preview2/phone icon.png" alt="" width="30px" class="v"><a href="tel:+13162911452">5527805255</a>
     
         <img src="/preview2/email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
     
@@ -219,40 +303,70 @@ and secure the best possible arrangement for your child.
     
     
     <div class="linkcolumn">
-       
-    
         <a href="/preview2/home.html">Home</a>
         <a href="practiceareas.html">Practice Areas</a>
+        <a href="/preview2/resources.html">Resources</a>
+        <a href="/preview2/testimonals.html">Testimonals</a>
         <a href="/preview2/about.html">About Us</a>
         <a href="/preview2/contact.html">Contact Us</a>
-
-
-
     </div>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-    </footer>
+   
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+
+</footer>
 
 
     <style>
-
-
-
-
-
-        footer{
-            margin-top: 3200px;
-            height: 720px;
-            
-        }
+      footer{
+        margin-top: 1000px;
+        height: 700px;
+        
+    }
         .emailandphone{
             margin-left: 250px;
         }
 
 
         .titlediv h1{
-            margin-top: 90px;
-            margin-left: -60px;
+            margin-top: 110px;
+            margin-left: -40px;
         }
+
+        .mslogo{
+            margin-left: 50px;
+        }
+
+        iframe{
+            margin-top: -120px;
+        }
+
+        @media screen and (max-width:600px) {
+        iframe{
+            margin-top: 120px;
+        }
+    }
+
+        @media only screen and (max-width: 600px) {
+
+.titlediv h1{
+    margin-left:300px;
+    width: 380px;
+    margin-top: 190px;
+    font-size:50px;
+
+}
+
+.mslogo{
+    margin-top: -60px;
+    margin-left: 40px;
+    width: 140px;
+}
+
+}
+
+
+
+
 
     </style>
 
@@ -265,17 +379,25 @@ and secure the best possible arrangement for your child.
         
             .moreaboutservice a{
         
-                margin-top:950px;
+                margin-top:850px;
             }
         
         
             .titlediv h1{
-            margin-top: 90px;
-            margin-left: -60px;
+                left: -18%;
+                top: 70px;
+                text-align: center;
+            
         }
         
             .mslogo{
             left: 150px;
+                
+
+        }
+        .emailandphone{
+            margin-left: 235px;
+            margin-top: 100px;
         }
         }
         

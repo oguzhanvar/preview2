@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/preview2/style2.css">
     <link href="https://fonts.cdnfonts.com/css/bright-sunshine" rel="stylesheet">
-    <title>Bankrupt Solutions</title>
+    <title>Bankrupt</title>
 </head>
-<body>
-    <div class="menubtn">
-        <img src="/preview2/menuicon.png" alt="" width="50px" style=" padding: 10px;" onclick="menuopening()">
-    </div>
+<body onscroll="Scroolling()">    
     
-    <style>
-        .titlediv{
-            backround-color:none;
-        }
-    </style>
+        
     
     <div class="mobilenav" id="mobilenav">
     
     
         <div class="mobilecontent" id="mobilecontent">
-            <img src="/preview2/closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
-            <img src="/preview2/w2.png" alt="" width="200px"  id="mobilelogo" style="position: absolute; margin-top:90px; margin-left: 50px; z-index: 15;">
+            <img src="closeicon.png" alt="" width="50px" style="position: absolute; margin-left:75%; cursor: pointer; margin: 30px;" onclick="closemenu()">
+            <img src="/preview2/w2.png" alt="" width="100px" style="position: absolute; margin-top:70px; margin-left: 98px; z-index: 15;" onclick="location.href='/preview2/home.html'">
             <a href="/preview2/makeapayment.html" style="margin-top:150px; ">Make a payment</a>
             <a href="/preview2/practiceareas/practiceareas.html">Practice Areas</a>
-            <a href="/preview2/about.html ">About Us</a>
-            <a href="/preview2/contact.html" >Contact</a>
+            <a href="resources.html">Resources</a>
+            <a href="testimonals.html">Testimonals</a>
+            <a href="about.html ">About Us</a>
+            <a href="contact.html" >Contact</a>
     
-            <a href="">552 780 5255</a>
-            <a href="">Oguzhanvar30@gmail.com</a>
-            <a href="">The adress</a>
+            <a href=""><img src="/preview2/phone icon.png" alt="" style="margin-left:-23px;" width="20px">+13162911452</a>
+            <a href=""><img src="/preview2/email-logo.png" alt="" style="margin-left:-23px;" width="20px"> Oguzhanvar30@gmail.com</a>
+            <a href="" style="margin-left: 15px;">320 N Main, Wichita, KS 67202, United States</a>
         </div>
     </div>
     
@@ -52,142 +47,208 @@
     </script>
 
 
-    <div class="thetop">
-
-        <img src="/preview2/orangeredlogo2.png" alt="" width="140px" onclick="location.href='/home.html'">
-        <div class="navbar">
-            <a href="/preview2/makeapayment.html" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
-            <a href="/preview2/practiceareas/practiceareas.html" style="margin-left: 220px;">Practice Areas</a>
-            <a href="/preview2/about.html " style="margin-left: 350px;">About Us</a>
-            <a href="/preview2/contact.html" style="margin-left: 250px; border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
-        </div>
-    
-    
-
-    </div>
-<div  class="titlediv">
 
 
-    <img src="/preview2/bankruptsolution.png" alt="" width="100%" class="aboutbg" id="thebg">
-
-
-    <h1>Bankrupt Solutions</h1>
-<img src="/preview2/w2.png" alt="" class="mslogo" width="210px" style=" position:absolute; left:41%;">
-    <div class="phonelogoemail" id="phoneandemail">
-        <a href="tel:5527805255" style="margin-right:800px; margin-left:35px;" >(+90)552-780-5255</a>
-        <a href="mailto:" >oguzhanvar30@gmail.com</a>
-  
-
-
-    </div>
-
+<div class="thetop" id="thetop">
+  <div class="menubtn">
+   <img src="/preview2/orangemenu.png" alt="" width="20px" style=" padding: 10px; width: 40px; margin-left: -20px; margin-top: 0px;" onclick="menuopening()" id="icon">
 </div>
+<div class="logodiv">
+<img src="/preview2/orangeredlogo2.png" alt="" width="100px" onclick="location.href='/preview2/home.html'" style="cursor:pointer;">
+</div>
+<div class="navbar" id="navbar">
+   <a href="/preview2/makeapayment.html" class="make_payment" style="border: 1px solid #ff4500; padding: 10px 20px;" id="boxlinks">Make a payment</a>
+   <a href="/preview2/resources.html">Resources</a>
+   <a href="/preview2/practiceareas/practiceareas.html" >Practice Areas</a>
+   <a href="/preview2/testimonals.html" id="practice_a">Testimonals</a>
+   <a href="/preview2/about.html" id="about_a" >About Us</a>
+   <a href="/preview2/contact.html" class="contactbox" style=" border: 1px solid orangered; padding: 10px 20px;" id="boxlinks">Contact</a>
+</div>
+</div>
+
+  <script>
+    function Scroolling() {
+        var thetop = document.getElementById("thetop");
+        if (window.scrollY > 0) {
+            thetop.style.backgroundColor = "white";
+        } else {
+            thetop.style.backgroundColor = "transparent";
+        }
+    }
+</script>
+
+
+    <div class="titlediv">
+        <img src="/preview2/bankruptsolution.png" alt="" width="100%" class="aboutbg" id="thebg">
+        <h1>Bankrupt Solutions</h1>
+        <img src="/preview2/w2.png" alt="" class="mslogo">
+        <div class="phonelogoemail" id="phoneandemail">
+            <a href="tel:+13162911452" style="margin-right:800px; margin-left:35px;">+13162911452</a>
+            <a href="mailto:oguzhanvar30@gmail.com">oguzhanvar30@gmail.com</a>
+        </div>
+    </div>
+    
+
+<style>
+    .titlediv {
+    font-family: 'Kanit', sans-serif;
+    height: 758px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add this line */
+}
+
+.titlediv h1 {
+    font-family: 'Bright Sunshine', sans-serif;
+    color: orangered;
+    font-size: 80px;
+    font-weight: 100;
+    position: absolute; /* Change to absolute positioning */
+    top: 35%; /* Position at vertical center */
+    left: 50%; /* Position at horizontal center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    margin: 0; /* Reset margin */
+}
+
+.mslogo {
+    width: 200px;
+    position: absolute; /* Change to absolute positioning */
+    top: 70%; /* Position at vertical center */
+    left: 50%; /* Position at horizontal center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+
+
+</style>
 
 
 <style>
     footer{
-        margin-top: 3200px;
-        height: 720px;
+        margin-top: 1000px;
+        height: 700px;
         
     }
     .emailandphone{
         margin-left: 250px;
     }
 
+    @media only screen and (max-width: 600px) {
 
-    .titlediv h1{
-        
-        margin-top: 120px;
-        margin-left: -10px;
+        .titlediv h1{
+            margin-left:-90px ;
+            margin-top: 10px;
+            font-size:60px;
+
+        }
+
+        .mslogo{
+            margin-top: -90px;
+            margin-left: -80px;
+            width: 140px;
+        }
+        .emailandphone{
+            margin-left: 235px;
+            margin-top: 100px;
+        }
     }
+
+
 </style>
+
+
 <div class="aboutservice">
 
-<img src="/preview2/profilepic2.png" alt="" width="600px" style="margin-top:30px;">
-
-<p>Bankruptcy is a legal process designed to provide 
-individuals and businesses overwhelmed by debt 
-with a fresh financial start. It offers various solutions 
-tailored to different circumstances. Chapter 7 
-bankruptcy, often referred to as liquidation bankruptcy, 
-involves the sale of non-exempt assets to discharge 
-most unsecured debts. This process typically takes a 
-few months and is suitable for individuals with limited
- income and significant debt. Chapter 13 bankruptcy, 
-on the other hand, enables individuals to reorganize 
-their debts into manageable repayment plans spanning 
-three to five years. This option is ideal for those with a 
-steady income who want to keep their assets while 
-repaying creditors over time. Additionally, Chapter 11 
-bankruptcy primarily serves businesses by allowing 
-them to restructure their operations and debts under 
-court supervision, enabling them to continue operating 
-and eventually regain financial stability.</p>
-
-            <a href="">Contact Us</a>
-</div>
-
-<div class="moreaboutservice">
-
-<img src="/preview2/bankrupts.png" alt="" width="100%" style="margin-top: 300px;">
-
-<p>The bankruptcy process involves several key steps to
- help individuals and businesses resolve their financial
- difficulties. It begins with the filing of a bankruptcy 
-petition, along with a detailed inventory of assets, debts
-, income, and expenses. An automatic stay is then
- issued, halting all collection efforts and providing 
-relief from creditor harassment. A bankruptcy trustee
- is appointed to oversee the case and assess the assets.
- For Chapter 7, non-exempt assets are sold, and the 
-proceeds are distributed to creditors. In Chapter 13, 
-a repayment plan is proposed based on the debtor's 
-disposable income, which, once approved by the court,
- allows the debtor to make monthly payments to the 
-trustee. Successful completion of the plan results in a
- discharge of remaining eligible debts. Throughout the
- process, legal counsel plays a crucial role in guiding 
-clients, ensuring proper documentation, and advocating
- on their behalf in court.</p>
-
-            <a href="">Contact Us</a>
-
-</div>
-<div class="moreaboutservice2">
-
-    <img src="/preview2/bankrupts2.png" alt="" width="600px" >
+    <img src="/preview2/profilepic2.png" alt="" width="600px" style="margin-top:30px;">
     
-    <p>
-The selection of a proficient bankruptcy attorney 
-serves as a lynchpin in steering a successful 
-bankruptcy expedition. An accomplished attorney
- serves as a compass, adroitly navigating the
- complexities of bankruptcy law while offering 
-customized guidance. Their adeptness facilitates 
-clients in identifying the most suitable bankruptcy 
-chapter harmonizing with their distinct financial
- circumstances. Attorneys facilitate the assembly 
-of exhaustive and precise documentation, ensuring 
-the punctilious completion of all mandatory forms
- within designated timeframes. Furthermore, legal
- counsel dons the mantle of a steadfast advocate, 
-representing clients during interactions with creditors
- and court hearings, vigilantly safeguarding their 
-rights and interests. Beyond procedural support, 
-attorneys provide insightful perspectives into the 
-long-term repercussions of bankruptcy, empowering 
-clients to make well-informed decisions in resonance
- with their financial aspirations. Whether seeking debt 
-alleviation as an individual or orchestrating strategic 
-corporate restructuring, a seasoned bankruptcy lawyer 
-stands as an indispensable collaborator throughout
- every phase of the bankruptcy sojourn.
-</p>
-              <a href="">Contact Us</a>
+    <p>Bankruptcy is a legal process designed to provide 
+    individuals and businesses overwhelmed by debt 
+    with a fresh financial start. It offers various solutions 
+    tailored to different circumstances. Chapter 7 
+    bankruptcy, often referred to as liquidation bankruptcy, 
+    involves the sale of non-exempt assets to discharge 
+    most unsecured debts. This process typically takes a 
+    few months and is suitable for individuals with limited
+     income and significant debt. Chapter 13 bankruptcy, 
+    on the other hand, enables individuals to reorganize 
+    their debts into manageable repayment plans spanning 
+    three to five years. This option is ideal for those with a 
+    steady income who want to keep their assets while 
+    repaying creditors over time. Additionally, Chapter 11 
+    bankruptcy primarily serves businesses by allowing 
+    them to restructure their operations and debts under 
+    court supervision, enabling them to continue operating 
+    and eventually regain financial stability.</p>
     
-    </div>   
-
-</body>
+                <a href="contact.html">Contact Us</a>
+    </div>
+    
+    <div class="moreaboutservice">
+    
+    <img src="/preview2/bankrupts.png" alt="" width="100%" style="margin-top: 30%;">
+    
+    <p>The bankruptcy process involves several key steps to
+     help individuals and businesses resolve their financial
+     difficulties. It begins with the filing of a bankruptcy 
+    petition, along with a detailed inventory of assets, debts
+    , income, and expenses. An automatic stay is then
+     issued, halting all collection efforts and providing 
+    relief from creditor harassment. A bankruptcy trustee
+     is appointed to oversee the case and assess the assets.
+     For Chapter 7, non-exempt assets are sold, and the 
+    proceeds are distributed to creditors. In Chapter 13, 
+    a repayment plan is proposed based on the debtor's 
+    disposable income, which, once approved by the court,
+     allows the debtor to make monthly payments to the 
+    trustee. Successful completion of the plan results in a
+     discharge of remaining eligible debts. Throughout the
+     process, legal counsel plays a crucial role in guiding 
+    clients, ensuring proper documentation, and advocating
+     on their behalf in court.</p>
+    
+                <a href="contact.html">Contact Us</a>
+    
+    </div>
+    <div class="moreaboutservice2">
+    
+        <img src="/preview2/bankrupts2.png" alt="" width="600px" >
+        
+        <p>
+    The selection of a proficient bankruptcy attorney 
+    serves as a lynchpin in steering a successful 
+    bankruptcy expedition. An accomplished attorney
+     serves as a compass, adroitly navigating the
+     complexities of bankruptcy law while offering 
+    customized guidance. Their adeptness facilitates 
+    clients in identifying the most suitable bankruptcy 
+    chapter harmonizing with their distinct financial
+     circumstances. Attorneys facilitate the assembly 
+    of exhaustive and precise documentation, ensuring 
+    the punctilious completion of all mandatory forms
+     within designated timeframes. Furthermore, legal
+     counsel dons the mantle of a steadfast advocate, 
+    representing clients during interactions with creditors
+     and court hearings, vigilantly safeguarding their 
+    rights and interests. Beyond procedural support, 
+    attorneys provide insightful perspectives into the 
+    long-term repercussions of bankruptcy, empowering 
+    clients to make well-informed decisions in resonance
+     with their financial aspirations. Whether seeking debt 
+    alleviation as an individual or orchestrating strategic 
+    corporate restructuring, a seasoned bankruptcy lawyer 
+    stands as an indispensable collaborator throughout
+     every phase of the bankruptcy sojourn.
+    </p>
+                  <a href="contact.html">Contact Us</a>
+        
+        </div>   
+    
+    </body>
+    
+    
 
 
 <footer style="position: absolute;">
@@ -198,7 +259,7 @@ stands as an indispensable collaborator throughout
     
     <div class="emailandphone">
     
-        <img src="/preview2/phone icon.png" alt="" width="30px" class="v"><a href="tel:5527805255">5527805255</a>
+        <img src="/preview2/phone icon.png" alt="" width="30px" class="v"><a href="tel:+13162911452">+13162911452</a>
     
         <img src="/preview2/email-logo.png" alt="" width="30px" class="v2"><a href="mailto:oguzhanvar30@gmail.com" style="margin-left:35px;">oguzhanvar30@gmail.com</a>
     
@@ -215,25 +276,35 @@ stands as an indispensable collaborator throughout
     
     
     
-    <style>.moreaboutservice{
+    <style>
+    .moreaboutservice{
         margin-top: 500px;
     
-    }</style>
+    }
+    iframe{
+            margin-top: -120px;
+        }
+
+    @media screen and (max-width:600px) {
+        iframe{
+            margin-top: 120px;
+        }
+    }
+    
+    </style>
     
     
     <div class="linkcolumn">
        
-    
         <a href="/preview2/home.html">Home</a>
         <a href="practiceareas.html">Practice Areas</a>
+        <a href="/preview2/resources.html">Resources</a>
+        <a href="/preview2/testimonals.html">Testimonals</a>
         <a href="/preview2/about.html">About Us</a>
         <a href="/preview2/contact.html">Contact Us</a>
-
-
-
     </div>
     
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452718959166!2d-97.34240265998905!3d37.69043845537197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1692105868191!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2452692764373!2d-97.34037488954571!3d37.69043851689853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bae3c3a3d93231%3A0xcfe2072e23f6901!2sCotton%20and%20Pittman%2C%20LLC!5e0!3m2!1sen!2str!4v1694958750841!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </footer>
 
     <script>
